@@ -91,7 +91,7 @@ export default function Home() {
       <Header page={'home'} />
       <OuterDiv4>
         <Picture src='/profile.jpg '></Picture>
-        <HiDiv>Hi, I'm Varsha.</HiDiv>
+        <HiDiv>{"Hi, I\'m Varsha."}</HiDiv>
         <OuterDiv3>
           <ILikeToDiv>I like to</ILikeToDiv>
           <DesignDiv>design</DesignDiv>

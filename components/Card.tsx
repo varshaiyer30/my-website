@@ -217,7 +217,7 @@ export default function Card() {
                     <RightTitle>spott</RightTitle>
                     <RightDetail>UI/UX design intern</RightDetail>
                     <RightDescription>spott is an up and coming social map app that crowdsources content for finding friends, food, and fun around you.</RightDescription>
-                    <RightDates>May '21 - Aug '21</RightDates>
+                    <RightDates>{"May \'21 - Aug \'21"}</RightDates>
                 </SpottText>
             </CardDiv>
             <Spacer></Spacer>
@@ -226,8 +226,8 @@ export default function Card() {
                     <IthacaTrailsText>
                         <LeftTitle>AppDev Hack Challenge</LeftTitle>
                         <LeftDetail>Ithaca Trails</LeftDetail>
-                        <LeftDescription>As a part of hack challenge organized by Cornell University's AppDev project team, I designed a new app called Ithaca Trails.</LeftDescription>
-                        <LeftDates>Dec '20 - Feb '21</LeftDates>
+                        <LeftDescription>{"As a part of hack challenge organized by Cornell University\'s AppDev project team, I designed a new app called Ithaca Trails."}</LeftDescription>
+                        <LeftDates>{"Dec \'20 - Feb \'21"}</LeftDates>
                     </IthacaTrailsText>
                     <ITMockup src='/ithacatrails.png'></ITMockup>
                 </CardDiv>
@@ -240,7 +240,7 @@ export default function Card() {
                         <RightTitle>VSCO Case Study</RightTitle>
                         <RightDetail>Medium Bootcamp</RightDetail>
                         <RightDescription>This is my first case study I completed as a part of a digital product design class I took during my first semester as a student at Cornell University.</RightDescription>
-                        <RightDates>Sept '20 - Feb '21</RightDates>
+                        <RightDates>{"Sept \'20 - Feb \'21"}</RightDates>
                     </VSCOText>
                 </CardDiv>
             </ExternalLink>

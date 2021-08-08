@@ -77,7 +77,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 50px;
     background: black;
-    font-family: SF Pro Display;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
   }
 `
 

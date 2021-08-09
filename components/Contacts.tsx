@@ -9,11 +9,12 @@ const ContactDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 120px;
+    scroll-snap-align: center;
     width: 438px;
     height: 120px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 50px;
 `
 const GitDiv = styled.div`
     display: flex;

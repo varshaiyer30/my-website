@@ -3,15 +3,27 @@ import styled from 'styled-components'
 import { useState } from 'react'
 import { animated, config, useSpring } from 'react-spring'
 import Contacts from './Contacts'
+import { Player } from '@lottiefiles/react-lottie-player'
 
 const OuterDiv = styled.div`
-    margin-left: 337px;
-    margin-right: 337px;
+    /* margin-left: 337px;
+    margin-right: 337px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
+`
+const OuterCardDiv = styled.div`
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    border-style: solid;
+    border-color: white;
+    margin-bottom: 120px;
 `
 const CardDiv = styled.div`
     display: flex;
@@ -19,14 +31,10 @@ const CardDiv = styled.div`
     align-items: center;
     justify-content: space-between;
     /* margin-bottom: 120px; */
+    /* width: 100vw;
+    height: 100vh; */
     width: 777px;
     height: 700px;
-    html {scroll-snap-type: y mandatory;
-    }
-
-`
-const Spacer = styled.div`
-    height: 120px;
 `
 const SMockup = styled(animated.img)`
     height: 700px;
@@ -96,7 +104,7 @@ const LeftDates = styled.div`
 `
 const LeftDescription = styled.div`
     font-size: 18px;
-    color: #666666;
+    color: #ADACAC;
     text-align: left;
     width: 330px;
     /* font-weight: lighter; */
@@ -152,7 +160,7 @@ const RightDates = styled.div`
 `
 const RightDescription = styled.div`
     font-size: 18px;
-    color: #666666;
+    color: #ADACAC;
     text-align: right;
     width: 330px;
     /* font-weight: lighter; */
@@ -198,11 +206,13 @@ const TwitterIcon = styled.img`
     width: 30px;
 `
 
+
 export default function Card() {
     const [gitHover, setGitHover] = useState(false)
     const [sHover, setSHover] = useState(false)
     const [iHover, setIHover] = useState(false)
     const [vHover, setVHover] = useState(false)
+
     const hoverState = {
         color: gitHover ? 'white' : '#666666',
         textDecoration: gitHover ? 'underline' : 'none'
@@ -241,6 +251,23 @@ export default function Card() {
 
     return (
         <OuterDiv>
+            {/* <OuterDiv4>
+                <Picture src='/profile.jpg '></Picture>
+                <HiDiv>{"Hi, I\'m Varsha."}</HiDiv>
+                <OuterDiv3>
+                    <ILikeToDiv>I like to</ILikeToDiv>
+                    <DesignDiv>design</DesignDiv>
+                    <PeriodDiv>.</PeriodDiv>
+                </OuterDiv3>
+                <Player
+                    autoplay
+                    loop
+                    src="https://assets1.lottiefiles.com/packages/lf20_yjh6sxqn.json"
+                    style={{ height: '150px', width: '150px'}}
+                >
+                </Player>
+            </OuterDiv4> */}
+            <OuterCardDiv>
             <CardDiv>
                 <SMockup
                     onMouseEnter={() => setSHover(true)} 
@@ -255,7 +282,8 @@ export default function Card() {
                     <RightDates>{"May \'21 - Aug \'21"}</RightDates>
                 </SpottText>
             </CardDiv>
-            <Spacer></Spacer>
+            </OuterCardDiv>
+            <OuterCardDiv>
             <ExternalLink href="https://varshaiyer.notion.site/varshaiyer/Ithaca-Trails-App-Dev-Hack-Challenge-FA-20-8b4df6cfb2d5428cb900a8af3b4eb565" target="_blank">
                 <CardDiv>
                     <IthacaTrailsText onMouseEnter={() => setIHover(true)}
@@ -273,7 +301,8 @@ export default function Card() {
                     </ITMockup>
                 </CardDiv>
             </ExternalLink>
-            <Spacer></Spacer>
+            </OuterCardDiv>
+            <OuterCardDiv>
             <ExternalLink href="https://bootcamp.uxdesign.cc/vsco-filtering-main-feed-content-ef23a7c2c449" target="_blank">
                 <CardDiv>
                     <VMockup 
@@ -291,6 +320,7 @@ export default function Card() {
                     </VSCOText>
                 </CardDiv>
             </ExternalLink>
+            </OuterCardDiv>
             <Contacts />
         </OuterDiv>
 

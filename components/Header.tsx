@@ -7,8 +7,10 @@ const OuterDiv = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 7vh;
+  margin-right: 7vh;
+  height: 20vh;
+  /* margin-top: 7vh; */
 `
 const Brand = styled.div`
   color: #ACDFFB;

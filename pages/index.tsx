@@ -26,9 +26,8 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     background: black;
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
-  }
+}
 `
-
 export default function Home() {
   return (
     <div>

@@ -169,54 +169,13 @@ const RightDescription = styled.div`
 const ExternalLink = styled.a`
     text-decoration: none;
 `
-const ContactDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 120px;
-    width: 438px;
-    height: 120px;
-    margin-left: 50px;
-    margin-right: 50px;
-`
-const GitDiv = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-`
-const GitText = styled.a`
-    color: white;
-    font-size: 24px;
-    text-align: center;
-    text-decoration-line: none;
-`
-const IconDiv = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-`
-const MailIcon = styled.img`
-    height: 25px;
-`
-const InstaInIcon = styled.img`
-    width: 40px;
-`
-const TwitterIcon = styled.img`
-    width: 30px;
-`
 
 
 export default function Card() {
-    const [gitHover, setGitHover] = useState(false)
     const [sHover, setSHover] = useState(false)
     const [iHover, setIHover] = useState(false)
     const [vHover, setVHover] = useState(false)
 
-    const hoverState = {
-        color: gitHover ? 'white' : '#666666',
-        textDecoration: gitHover ? 'underline' : 'none'
-    }
 
     const sHoverState = useSpring({
         boxShadow: sHover ? '0px 4px 4px 7px rgba(230, 210, 161, 0.20)' : '0px 0px 0px 0px rgba(230, 210, 161, 0.2)',

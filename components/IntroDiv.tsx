@@ -3,18 +3,11 @@ import styled, { createGlobalStyle, keyframes } from 'styled-components'
 import { Player } from '@lottiefiles/react-lottie-player'
 
 const OuterDiv = styled.div`
-/* picture + hi i'm varsha */
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
-  /* border-style: solid;
-  border-color: white; */
-  /* width: 100vw; */
-  height: 100%;
-  scroll-snap-align: end;
-  /* max-width: 100%;
-  max-height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    scroll-snap-align: end;
 `
 const InnerDiv = styled.div`
     display: flex;
@@ -22,9 +15,6 @@ const InnerDiv = styled.div`
     justify-content: space-between;
     align-items: center;
     height: 60%;
-    /* border-style: solid;
-    border-color: white; */
-
 `
 const OuterILikeToDesignDiv = styled.div`
 /* I'm Varsha */
@@ -32,39 +22,70 @@ const OuterILikeToDesignDiv = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* width: 425px; */
- 
 `
 const Picture = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   border: 1px solid #ACDFFB;
   margin-bottom: 10px;
-  margin-top: 8%;
+  margin-top: 8%; 
+  @media (min-width: 43em){
+  width: 200px;
+  height: 200px;
+}
+
+@media (min-width: 62em){
+  width: 200px;
+  height: 200px;
+}
 `
 const HiDiv = styled.div`
-  font-weight: 300;
-  font-size: 72px;
+font-weight: 300;
+  font-size: 48px;
   color: white;
   margin-bottom: 10px;
+  @media (min-width: 43em){
+  font-size: 72px;
+}
+@media (min-width: 62em){
+  font-size: 72px;
+}
 `
 const ILikeToDiv = styled.div`
-  color: white;
+color: white;
   font-weight: 400;
+  font-size: 48px;
+  @media (min-width: 43em){
   font-size: 72px;
+}
+@media (min-width: 62em){
+  font-size: 72px;
+}
 `
 const PeriodDiv = styled.div`
-  color: white;
+color: white;
   font-weight: bold;
-  font-size: 72px;
+  font-size: 48px;
   margin-left: 2px;
+  @media (min-width: 43em){
+  font-size: 72px;
+}
+@media (min-width: 62em){
+  font-size: 72px;
+}
 `
 const DesignDiv = styled.div`
-  color: #ACDFFB;
+color: #ACDFFB;
   font-weight: bold;
-  font-size: 72px;
+  font-size: 48px;
   margin-left:15px;
+  @media (min-width: 43em){
+  font-size: 72px;
+}
+@media (min-width: 62em){
+  font-size: 72px;
+}
 `
 export default function IntroDiv() {
     return(

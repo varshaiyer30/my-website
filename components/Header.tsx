@@ -10,6 +10,7 @@ const OuterDiv = styled.div`
   margin-left: 7vh;
   margin-right: 7vh;
   height: 20vh;
+  position: relative;
   /* margin-top: 7vh; */
 `
 const Brand = styled.div`

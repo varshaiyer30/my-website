@@ -9,7 +9,6 @@ const OuterDiv = styled.div`
     justify-content: center;
     height: 100%;
     scroll-snap-align: center;
-    overflow-y: scroll;
 `
 const InnerDiv = styled.div`
     display: flex;
@@ -160,7 +159,8 @@ export default function IthTrailsDiv(){
 
     return(
         <OuterDiv>
-            <ExternalLink href="https://varshaiyer.notion.site/varshaiyer/Ithaca-Trails-App-Dev-Hack-Challenge-FA-20-8b4df6cfb2d5428cb620a8af3b4eb565" target="_blank">
+            <ExternalLink href="https://varshaiyer.notion.site/varshaiyer/Ithaca-Trails-App-Dev-Hack-Challenge-FA-20-8b4df6cfb2d5428cb900a8af3b4eb565" 
+            target="_blank">
                 <InnerDiv>
                     <IthacaTrailsText onMouseEnter={() => setIHover(true)}
                         onMouseLeave={() => setIHover(false)}>

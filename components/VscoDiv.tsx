@@ -9,6 +9,7 @@ const OuterDiv = styled.div`
     justify-content: center;
     height: 100%;
     scroll-snap-align: center;
+    overflow-y: scroll;
     @media (min-width: 43em){
         display:flex;
         align-items: center;

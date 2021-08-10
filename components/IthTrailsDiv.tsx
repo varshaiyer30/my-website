@@ -9,6 +9,7 @@ const OuterDiv = styled.div`
     justify-content: center;
     height: 100%;
     scroll-snap-align: center;
+    overflow-y: scroll;
 `
 const InnerDiv = styled.div`
     display: flex;

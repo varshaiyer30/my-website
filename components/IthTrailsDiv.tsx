@@ -17,6 +17,7 @@ const InnerDiv = styled.div`
     justify-content: space-between;
     width: 300px;
     height: 700px;
+    cursor: pointer;
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
@@ -157,26 +158,27 @@ export default function IthTrailsDiv(){
 
     })
 
+    const notion = () => {
+        window.open('https://varshaiyer.notion.site/varshaiyer/Ithaca-Trails-App-Dev-Hack-Challenge-FA-20-8b4df6cfb2d5428cb900a8af3b4eb565', '_blank')
+    }
+
     return(
         <OuterDiv>
-            <ExternalLink href="https://varshaiyer.notion.site/varshaiyer/Ithaca-Trails-App-Dev-Hack-Challenge-FA-20-8b4df6cfb2d5428cb900a8af3b4eb565" 
-            target="_blank">
-                <InnerDiv>
-                    <IthacaTrailsText onMouseEnter={() => setIHover(true)}
-                        onMouseLeave={() => setIHover(false)}>
-                        <LeftTitle>AppDev Hack Challenge</LeftTitle>
-                        <LeftDetail>Ithaca Trails</LeftDetail>
-                        <LeftDates>{"Dec \'20 - Feb \'21"}</LeftDates>
-                        <LeftDescription>{"As a part of hack challenge organized by Cornell University\'s AppDev project team, I designed a new app for finding trails in Ithaca, New York."}</LeftDescription>
-                    </IthacaTrailsText>
-                    <ITMockup 
-                        onMouseEnter={() => setIHover(true)}
-                        onMouseLeave={() => setIHover(false)}
-                        src='/ithacatrails.png'
-                        style={iHoverState}>
-                    </ITMockup>
-                </InnerDiv>
-            </ExternalLink>
+            <InnerDiv onClick={notion}>
+                <IthacaTrailsText onMouseEnter={() => setIHover(true)}
+                    onMouseLeave={() => setIHover(false)}>
+                    <LeftTitle>AppDev Hack Challenge</LeftTitle>
+                    <LeftDetail>Ithaca Trails</LeftDetail>
+                    <LeftDates>{"Dec \'20 - Feb \'21"}</LeftDates>
+                    <LeftDescription>{"As a part of hack challenge organized by Cornell University\'s AppDev project team, I designed a new app for finding trails in Ithaca, New York."}</LeftDescription>
+                </IthacaTrailsText>
+                <ITMockup 
+                    onMouseEnter={() => setIHover(true)}
+                    onMouseLeave={() => setIHover(false)}
+                    src='/ithacatrails.png'
+                    style={iHoverState}>
+                </ITMockup>
+            </InnerDiv>
         </OuterDiv>
     )
 }

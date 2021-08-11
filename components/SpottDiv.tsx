@@ -9,7 +9,6 @@ const OuterDiv = styled.div`
     justify-content: center;
     height: 100%;
     scroll-snap-align: center;
-    margin-bottom: 120px;
 `
 const InnerDiv = styled.div`
     display: flex;
@@ -18,6 +17,7 @@ const InnerDiv = styled.div`
     justify-content: space-between;
     width: 300px;
     height: 700px;
+    margin-bottom: 50px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;

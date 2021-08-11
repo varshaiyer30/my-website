@@ -33,6 +33,7 @@ const InnerDiv = styled.div`
     justify-content: space-between;
     width: 300px;
     height: 700px;
+    margin-bottom: 50px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;

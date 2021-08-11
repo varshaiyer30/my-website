@@ -59,7 +59,7 @@ const SpottText = styled.div`
     justify-content: space-between;
     height: 200px;
     width: 330px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;

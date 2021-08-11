@@ -75,7 +75,7 @@ const VSCOText = styled.div`
     justify-content: space-between;
     height: 185px;
     width: 330px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;

@@ -17,14 +17,8 @@ const FirstDiv = styled.div`
   text-align: center;
   scroll-snap-type: y mandatory;
   scroll-padding: 10px;
+  overflow-y: scroll;
   background-color: black;
-  @media (min-width: 43em){
-    overflow-y: scroll;
-  }
-
-  @media (min-width: 62em){
-    overflow-y: scroll;
-  }
 `
 const GlobalStyle = createGlobalStyle`
   body {

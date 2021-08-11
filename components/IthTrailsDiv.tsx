@@ -18,13 +18,14 @@ const InnerDiv = styled.div`
     width: 300px;
     height: 700px;
     cursor: pointer;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
         align-items: center;
         height: 500px;
         width: 580px;
+        margin-bottom: 0px;
     }
     @media (min-width: 62em){
         display: flex;
@@ -33,6 +34,7 @@ const InnerDiv = styled.div`
         justify-content: space-between;
         width: 777px;
         height: 700px;
+        margin-bottom: 0px;
     }
 `
 const ITMockup = styled(animated.img)`

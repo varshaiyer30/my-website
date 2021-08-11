@@ -9,6 +9,7 @@ const OuterDiv = styled.div`
     justify-content: center;
     height: 100%;
     scroll-snap-align: center;
+    margin-bottom: 120px;
 `
 const InnerDiv = styled.div`
     display: flex;
@@ -54,7 +55,7 @@ const LeftTitle = styled.div`
     font-size: 24px;
     font-weight: bold;
     text-align: left;
-    width: 250px;
+    width: 300px;
     @media(min-width: 43em){
         font-size: 36px;
         width: 400px;
@@ -68,7 +69,7 @@ const LeftDetail = styled.div`
     font-size: 16px;
     color: white;
     text-align: left;
-    width: 250px;
+    width: 300px;
     @media(min-width: 43em){
         font-size: 24px;
         width: 400px;
@@ -85,7 +86,7 @@ const LeftDates = styled.div`
     font-size: 16px;
     color: #8b8a8a;
     text-align: left;
-    width: 250px;
+    width: 300px;
     @media(min-width: 43em){
         font-size: 20px;
         width: 400px;
@@ -102,7 +103,7 @@ const LeftDescription = styled.div`
     font-size: 14px;
     color: #ADACAC;
     text-align: left;
-    width: 250px;
+    width: 300px;
     @media(min-width: 43em){
         margin-top: 5px;
     }
@@ -119,8 +120,9 @@ const IthacaTrailsText = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 200px;
-    width: 300px;
+    height: 170px;
+    width: 330px;
+    margin-bottom: 30px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;

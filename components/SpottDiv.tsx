@@ -9,6 +9,7 @@ const OuterDiv = styled.div`
     justify-content: center;
     height: 100%;
     scroll-snap-align: center;
+    margin-bottom: 120px;
 `
 const InnerDiv = styled.div`
     display: flex;
@@ -54,8 +55,9 @@ const SpottText = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 220px;
-    width: 300px;
+    height: 200px;
+    width: 330px;
+    margin-bottom: 20px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;
@@ -82,7 +84,7 @@ const RightTitle = styled.div`
     font-size: 24px;
     font-weight: bold;
     text-align: left;
-    width: 250px;
+    width: 300px;
     @media(min-width: 43em){
         font-size: 36px;
         text-align: right;
@@ -98,7 +100,7 @@ const RightDetail = styled.div`
     font-size: 16px;
     color: white;
     text-align: left;
-    width: 250px;
+    width: 300px;
     @media(min-width: 43em){
         font-size: 24px;
         text-align: right;
@@ -116,7 +118,7 @@ const RightDates = styled.div`
     font-size: 16px;
     color: #8b8a8a;
     text-align: left;
-    width: 250px;
+    width: 300px;
     @media(min-width: 43em){
         font-size: 20px;
         text-align: right;
@@ -134,7 +136,7 @@ const RightDescription = styled.div`
     font-size: 14px;
     color: #ADACAC;
     text-align: left;
-    width: 250px;
+    width: 300px;
     @media(min-width: 43em){
         width: 280px;
         text-align: right;

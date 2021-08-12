@@ -30,10 +30,9 @@ const InnerDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 300px;
-    height: 700px;
-    padding-bottom: 70px;
+    height: 770px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
@@ -61,6 +60,7 @@ const VMockup = styled(animated.img)`
     border-style: solid;
     box-shadow: 0px 1px 4px 5px rgba(255, 255, 255, 0.25);
     filter: drop-shadow(0px 20px 40px rgba(102, 102, 102, 0.25));
+    margin-bottom: 20px;
     @media(min-width: 43em){
         height: 600px;
     }

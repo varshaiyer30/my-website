@@ -17,7 +17,7 @@ const InnerDiv = styled.div`
     justify-content: space-between;
     width: 300px;
     height: 700px;
-    padding-bottom: 70px;
+    margin-bottom: 70px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
@@ -59,7 +59,7 @@ const SpottText = styled.div`
     justify-content: space-between;
     height: 200px;
     width: 330px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;

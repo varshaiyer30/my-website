@@ -33,7 +33,7 @@ const InnerDiv = styled.div`
     justify-content: space-between;
     width: 300px;
     height: 700px;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
@@ -75,7 +75,7 @@ const VSCOText = styled.div`
     justify-content: space-between;
     height: 185px;
     width: 330px;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;

@@ -18,7 +18,7 @@ const InnerDiv = styled.div`
     width: 300px;
     height: 700px;
     cursor: pointer;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
@@ -124,7 +124,7 @@ const IthacaTrailsText = styled.div`
     justify-content: space-between;
     height: 170px;
     width: 330px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;

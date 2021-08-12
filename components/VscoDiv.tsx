@@ -41,7 +41,7 @@ const InnerDiv = styled.div`
         justify-content: space-between;
         height: 500px;
         width: 580px;
-        margin-bottom: 0px;
+        padding-bottom: 0px;
     }
     @media (min-width: 62em){
         display: flex;
@@ -50,7 +50,7 @@ const InnerDiv = styled.div`
         justify-content: space-between;
         width: 777px;
         height: 700px;
-        margin-bottom: 0px;
+        padding-bottom: 0px;
     }
 `
 const VMockup = styled(animated.img)`
@@ -84,7 +84,7 @@ const VSCOText = styled.div`
         justify-content: space-between;
         height: 220px;
         width: 280px;
-        margin-bottom: 280px;
+        padding-bottom: 280px;
     }
     @media (min-width: 62em){
         display: flex;
@@ -94,7 +94,7 @@ const VSCOText = styled.div`
         justify-content: space-between;
         height: 200px;
         width: 400px;
-        margin-bottom: 200px;
+        padding-bottom: 200px;
     }
     
 `

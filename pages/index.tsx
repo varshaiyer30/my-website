@@ -16,7 +16,7 @@ const FirstDiv = styled.div`
   height: 100vh;
   text-align: center;
   scroll-snap-type: y mandatory;
-  scroll-padding: 10px;
+  scroll-padding: 0px;
   overflow-y: scroll;
   background-color: black;
 `

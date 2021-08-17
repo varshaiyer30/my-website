@@ -11,8 +11,8 @@ const ContactDiv = styled.div`
     justify-content: center;
     scroll-snap-align: center;
     width: 340px;
-    height: 50px;
-    margin-left: 18px;
+    height: 10px;
+    margin-left: 25px;
     margin-bottom: 50px;
     @media(min-width: 43em){
         margin-left: 170px;

@@ -10,10 +10,20 @@ const ContactDiv = styled.div`
     flex-direction: column;
     justify-content: center;
     scroll-snap-align: center;
-    width: 438px;
-    height: 100px;
-    margin-left: 500px;
+    width: 340px;
+    height: 50px;
+    margin-left: 18px;
     margin-bottom: 50px;
+    @media(min-width: 43em){
+        margin-left: 170px;
+        width: 438px;
+        height: 50px;
+        margin-bottom: 100px;
+    }
+    @media (min-width: 62em){
+        margin-left: 500px;
+        width: 438px;
+    }
 `
 const GitDiv = styled.div`
     display: flex;
@@ -22,9 +32,15 @@ const GitDiv = styled.div`
 `
 const GitText = styled.a`
     color: white;
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
     text-decoration-line: none;
+    @media(min-width: 43em){
+        font-size: 24px;
+    }
+    @media (min-width: 62em){
+        font-size: 24px;
+    }
 `
 const IconDiv = styled.div`
     display: flex;

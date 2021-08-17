@@ -162,10 +162,13 @@ export default function SpottDiv(){
             friction: 26,
         }
     })
+    const notion = () => {
+        window.open('https://varshaiyer.notion.site/spott-19007c5d5131439ebcd7dddf15d5e5e3', '_blank')
+    }
 
     return(
         <OuterDiv>
-            <InnerDiv>
+            <InnerDiv onClick={notion}>
                 <SMockup
                     onMouseEnter={() => setSHover(true)} 
                     onMouseLeave={() => setSHover(false)} 
@@ -176,7 +179,7 @@ export default function SpottDiv(){
                     <RightTitle>spott</RightTitle>
                     <RightDetail>UI/UX design intern</RightDetail>
                     <RightDates>{"May \'21 - Aug \'21"}</RightDates>
-                    <RightDescription>spott is a social map for finding what’s happening around you. I designed screens for a new groups feature, improved the current UI, developed some screens in the cross-platform Flutter app, and designed and built a dashboard for enterprise users.</RightDescription>
+                    <RightDescription>spott is a social map for finding what’s happening around you. I designed screens for a new groups feature, improved the current UI, developed some screens in the cross-platform Flutter app, and designed a waitlist website to build hype around the app.</RightDescription>
                 </SpottText>
             </InnerDiv>
         </OuterDiv>

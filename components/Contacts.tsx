@@ -8,18 +8,17 @@ const ExternalLink = styled.a`
 const ContactDiv = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     scroll-snap-align: center;
     width: 438px;
-    height: 120px;
-    margin-left: 50px;
-    margin-right: 50px;
+    height: 100px;
+    margin-left: 500px;
     margin-bottom: 50px;
 `
 const GitDiv = styled.div`
     display: flex;
     flex-direction: row;
-    align-items: center;
+    margin-bottom: 20px;
 `
 const GitText = styled.a`
     color: white;

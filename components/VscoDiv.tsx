@@ -2,11 +2,13 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { useState } from 'react'
 import { animated, config, useSpring } from 'react-spring'
+import Contacts from './Contacts'
 
 const OuterDiv = styled.div`
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
     height: 100%;
     scroll-snap-align: center;
     @media (min-width: 43em){
@@ -173,6 +175,9 @@ const RightDescription = styled.div`
 const ExternalLink = styled.a`
     text-decoration: none;
 `
+const Spacer = styled.div`
+    height: 40px;
+`
 export default function VscoDiv(){
     const [vHover, setVHover] = useState(false)
     const vHoverState = useSpring({
@@ -184,12 +189,14 @@ export default function VscoDiv(){
             friction: 26,
         }
     })
+    const article = () => {
+        window.open('https://bootcamp.uxdesign.cc/vsco-filtering-main-feed-content-ef23a7c2c449', '_blank')
+    }
 
     return(
         <OuterDiv>
-            <ExternalLink href="https://bootcamp.uxdesign.cc/vsco-filtering-main-feed-content-ef23a7c2c449" target="_blank">
-                <InnerDiv>
-                    <VMockup 
+                <InnerDiv onClick={article}>
+                    <VMockup
                         onMouseEnter={() => setVHover(true)}
                         onMouseLeave={() => setVHover(false)}
                         src='/vsco.png'
@@ -203,7 +210,7 @@ export default function VscoDiv(){
                         <RightDescription>{"This is my first case study I completed as a part of a digital product design class I took during my first semester as a student at Cornell University. It was published by UX Collective\’s Medium publication - Bootcamp."}</RightDescription>
                     </VSCOText>
                 </InnerDiv>
-            </ExternalLink>
+                {/* <Contacts></Contacts> */}
         </OuterDiv>
     )
 }

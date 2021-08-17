@@ -16,6 +16,8 @@ const FirstDiv = styled.div`
   height: 100vh;
   text-align: center;
   scroll-snap-type: y mandatory;
+  flex-direction: column;
+  align-items: center;
   scroll-padding: 0px;
   overflow-y: scroll;
   background-color: black;
@@ -41,6 +43,8 @@ export default function Home() {
         <SpottDiv />
         <IthTrailsDiv />
         <VscoDiv />
+        {/* <IntroDiv /> */}
+        <Contacts/>
       </FirstDiv>
     </div>
   )

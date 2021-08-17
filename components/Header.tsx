@@ -10,7 +10,10 @@ const OuterDiv = styled.div`
   margin-left: 7vh;
   margin-right: 7vh;
   height: 20vh;
-  position: relative;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0,0,0,0);
+  z-index: 5;
   /* margin-top: 7vh; */
 `
 const Brand = styled.div`
@@ -33,7 +36,7 @@ const TextDiv = styled.div`
 `
 
 const Spacer = styled.div`
-    flex-grow: 1;
+    width:830px;
 `
 
 const GlobalStyle = createGlobalStyle`

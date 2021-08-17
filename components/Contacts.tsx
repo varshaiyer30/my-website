@@ -12,7 +12,7 @@ const ContactDiv = styled.div`
     scroll-snap-align: center;
     width: 340px;
     height: 10px;
-    margin-left: 25px;
+    margin-left: 30px;
     margin-bottom: 50px;
     @media(min-width: 43em){
         margin-left: 170px;

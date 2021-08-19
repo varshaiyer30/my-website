@@ -2,7 +2,7 @@
 
 ## About
 
-It written using React, Next.js, CSS, and JavaScript.
+This website is written using React, Next.js, CSS, and JavaScript.
 
 ## How to Run
 

@@ -12,7 +12,7 @@ const ContactDiv = styled.div`
     scroll-snap-align: center;
     width: 340px;
     height: 10px;
-    margin-left: 30px;
+    margin-left: 35px;
     margin-bottom: 50px;
     @media(min-width: 43em){
         margin-left: 170px;
@@ -23,6 +23,8 @@ const ContactDiv = styled.div`
     @media (min-width: 62em){
         margin-left: 500px;
         width: 438px;
+        margin-top: 50px;
+        margin-bottom: 40px;
     }
 `
 const GitDiv = styled.div`

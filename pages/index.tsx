@@ -10,6 +10,11 @@ import IthTrailsDiv from '../components/IthTrailsDiv'
 import VscoDiv from '../components/VscoDiv'
 import IntroDiv from '../components/IntroDiv'
 import Contacts from '../components/Contacts'
+import IntroArtDiv from '../components/IntroArtDiv'
+import IntroAbtDiv from '../components/IntroAbtDiv'
+import AboutDiv1 from '../components/AboutDiv1'
+import AboutDiv2 from '../components/AboutDiv2'
+import AboutDiv3 from '../components/AboutDiv3'
 
 const FirstDiv = styled.div`
   width: calc(100vw - (100vw - 100%));
@@ -43,7 +48,11 @@ export default function Home() {
         <SpottDiv />
         <IthTrailsDiv />
         <VscoDiv />
-        {/* <IntroDiv /> */}
+        <IntroAbtDiv />
+        <AboutDiv1 />
+        <AboutDiv2 />
+        <AboutDiv3 />
+        <IntroArtDiv />
         <Contacts/>
       </FirstDiv>
     </div>

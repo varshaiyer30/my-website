@@ -15,6 +15,7 @@ const InnerDiv = styled.div`
     justify-content: space-between;
     align-items: center;
     height: 60%;
+    cursor: default;
 `
 const OuterILikeToDesignDiv = styled.div`
 /* I'm Varsha */

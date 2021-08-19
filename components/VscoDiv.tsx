@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { useState } from 'react'
 import { animated, config, useSpring } from 'react-spring'
 import Contacts from './Contacts'
+import { Player } from '@lottiefiles/react-lottie-player'
 
 const OuterDiv = styled.div`
     display:flex;
@@ -36,6 +37,7 @@ const InnerDiv = styled.div`
     width: 300px;
     height: 700px;
     padding-bottom: 70px;
+    cursor: pointer;
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
@@ -48,7 +50,7 @@ const InnerDiv = styled.div`
     @media (min-width: 62em){
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-between;
         width: 777px;
         height: 700px;
@@ -68,6 +70,7 @@ const VMockup = styled(animated.img)`
     }
     @media (min-width: 62em){
         height: 630px;
+        margin-bottom: 35px;
     }
 `
 const VSCOText = styled.div`
@@ -96,7 +99,8 @@ const VSCOText = styled.div`
         justify-content: space-between;
         height: 200px;
         width: 400px;
-        padding-bottom: 200px;
+        padding-bottom: 110px;
+        margin-left: 100px;
     }
     
 `
@@ -209,8 +213,14 @@ export default function VscoDiv(){
                         <RightDates>{"Sept \'20 - Feb \'21"}</RightDates>
                         <RightDescription>{"This is my first case study I completed as a part of a digital product design class I took during my first semester as a student at Cornell University. It was published by UX Collective\’s Medium publication - Bootcamp."}</RightDescription>
                     </VSCOText>
+                    <Player
+                    autoplay
+                    loop
+                    src="https://assets1.lottiefiles.com/packages/lf20_yjh6sxqn.json"
+                    style={{ height: '130px', width: '130px'}}
+                >
+            </Player>
                 </InnerDiv>
-                {/* <Contacts></Contacts> */}
         </OuterDiv>
     )
 }

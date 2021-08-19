@@ -2,10 +2,12 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { useState } from 'react'
 import { animated, config, useSpring } from 'react-spring'
+import { Player } from '@lottiefiles/react-lottie-player'
 
 const OuterDiv = styled.div`
     display:flex;
     align-items: center;
+    flex-direction: row;
     justify-content: center;
     height: 100%;
     scroll-snap-align: center;
@@ -18,6 +20,7 @@ const InnerDiv = styled.div`
     width: 300px;
     height: 700px;
     padding-bottom: 70px;
+    cursor: pointer;
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
@@ -30,10 +33,11 @@ const InnerDiv = styled.div`
     @media (min-width: 62em){
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-between;
         width: 777px;
         height: 700px;
+        margin-left: 100px;
         padding-bottom: 0px;
     }
 `
@@ -50,6 +54,7 @@ const SMockup = styled(animated.img)`
     }
     @media (min-width: 62em){
         height: 630px;
+        margin-bottom: 35px;
     }
 `
 const SpottText = styled.div`
@@ -78,7 +83,8 @@ const SpottText = styled.div`
         justify-content: space-between;
         height: 200px;
         width: 400px;
-        padding-bottom: 250px;
+        /* margin-left: 15px; */
+        padding-bottom: 130px;
     }
 `
 const RightTitle = styled.div`
@@ -151,6 +157,9 @@ const RightDescription = styled.div`
         margin-top: 5px;
     }
 `
+const Spacer = styled.div`
+    width: 100px;
+`
 export default function SpottDiv(){
     const [sHover, setSHover] = useState(false)
     const sHoverState = useSpring({
@@ -179,8 +188,16 @@ export default function SpottDiv(){
                     <RightTitle>spott</RightTitle>
                     <RightDetail>UI/UX design intern</RightDetail>
                     <RightDates>{"May \'21 - Aug \'21"}</RightDates>
-                    <RightDescription>spott is a social map for finding what’s happening around you. I designed screens for a new groups feature, improved the current UI, developed some screens in the cross-platform Flutter app, and designed a waitlist website to build hype around the app.</RightDescription>
+                    <RightDescription>spott is a social map for finding what’s happening around you. I designed screens for a new groups feature, improved the current UI, developed some screens in the cross-platform Flutter app, and designed a waitlist website to build hype around the app.
+                    </RightDescription>
                 </SpottText>
+                <Player
+                    autoplay
+                    loop
+                    src="https://assets1.lottiefiles.com/packages/lf20_yjh6sxqn.json"
+                    style={{ height: '130px', width: '130px'}}
+                >
+            </Player>
             </InnerDiv>
         </OuterDiv>
     )

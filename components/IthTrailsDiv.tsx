@@ -2,6 +2,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { useState } from 'react'
 import { animated, config, useSpring } from 'react-spring'
+import { Player } from '@lottiefiles/react-lottie-player'
 
 const OuterDiv = styled.div`
     display:flex;
@@ -30,7 +31,7 @@ const InnerDiv = styled.div`
     @media (min-width: 62em){
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-between;
         width: 777px;
         height: 700px;
@@ -50,6 +51,7 @@ const ITMockup = styled(animated.img)`
     }
     @media (min-width: 62em){
         height: 630px;
+        margin-bottom: 35px;
     }
 `
 const LeftTitle = styled.div`
@@ -143,7 +145,8 @@ const IthacaTrailsText = styled.div`
         justify-content: space-between;
         height: 200px;
         width: 400px;
-        padding-bottom: 220px;
+        margin-right: 60px;
+        padding-bottom: 60px;
     }   
 `
 const ExternalLink = styled.a`
@@ -171,8 +174,8 @@ export default function IthTrailsDiv(){
             <InnerDiv onClick={notion}>
                 <IthacaTrailsText onMouseEnter={() => setIHover(true)}
                     onMouseLeave={() => setIHover(false)}>
-                    <LeftTitle>AppDev Hack Challenge</LeftTitle>
-                    <LeftDetail>Ithaca Trails</LeftDetail>
+                    <LeftTitle>Ithaca Trails</LeftTitle>
+                    <LeftDetail>AppDev Hack Challenge</LeftDetail>
                     <LeftDates>{"Dec \'20 - Feb \'21"}</LeftDates>
                     <LeftDescription>{"As a part of hack challenge organized by Cornell University\'s AppDev project team, I designed a new app for finding trails in Ithaca, New York."}</LeftDescription>
                 </IthacaTrailsText>
@@ -182,6 +185,13 @@ export default function IthTrailsDiv(){
                     src='/ithacatrails.png'
                     style={iHoverState}>
                 </ITMockup>
+                <Player
+                    autoplay
+                    loop
+                    src="https://assets1.lottiefiles.com/packages/lf20_yjh6sxqn.json"
+                    style={{ height: '130px', width: '130px'}}
+                >
+            </Player>
             </InnerDiv>
         </OuterDiv>
     )

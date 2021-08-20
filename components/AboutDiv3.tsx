@@ -37,7 +37,7 @@ const InnerDiv = styled.div`
         width: 777px;
         height: 700px;
         padding-bottom: 0px;
-        /* margin-right: 20px; */
+        margin-right: 30px;
     }
 `
 const OuterImageDiv = styled.div`

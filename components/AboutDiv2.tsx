@@ -36,7 +36,7 @@ const InnerDiv = styled.div`
         width: 950px;
         height: 700px;
         padding-bottom: 0px;
-        margin-right: 40px;
+        margin-right: 80px;
     }
 `
 const ITMockup = styled(animated.img)`
@@ -99,7 +99,7 @@ const IthacaTrailsText = styled.div`
         justify-content: space-between;
         height: 200px;
         width: 400px;
-        margin-right: 60px;
+        margin-right: 40px;
         padding-bottom: 295px;
     }   
 `

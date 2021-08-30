@@ -76,7 +76,7 @@ const Turtle = styled(animated.img)`
     @media(min-width: 43em){
     }
     @media (min-width: 62em){
-        margin-top: 30px;
+        margin-top: 52px;
         height: 371.45px;
         width: 500px;
         margin-left: 30px;

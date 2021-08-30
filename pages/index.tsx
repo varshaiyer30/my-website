@@ -15,6 +15,12 @@ import IntroAbtDiv from '../components/IntroAbtDiv'
 import AboutDiv1 from '../components/AboutDiv1'
 import AboutDiv2 from '../components/AboutDiv2'
 import AboutDiv3 from '../components/AboutDiv3'
+import ArtDiv1 from '../components/ArtDiv1'
+import ArtDiv2 from '../components/ArtDiv2'
+import ArtDiv3 from '../components/ArtDiv3'
+import ArtDiv4 from '../components/ArtDiv4'
+import ArtDiv5 from '../components/ArtDiv5'
+import ArtDiv6 from '../components/ArtDiv6'
 
 const FirstDiv = styled.div`
   width: calc(100vw - (100vw - 100%));
@@ -53,6 +59,12 @@ export default function Home() {
         <AboutDiv2 />
         <AboutDiv3 />
         <IntroArtDiv />
+        <ArtDiv1 />
+        <ArtDiv2 />
+        <ArtDiv3 />
+        <ArtDiv4 />
+        <ArtDiv5 />
+        <ArtDiv6 />
         <Contacts/>
       </FirstDiv>
     </div>

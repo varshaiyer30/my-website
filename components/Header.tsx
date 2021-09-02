@@ -5,16 +5,24 @@ import HeaderText from './HeaderText'
 const OuterDiv = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 7vh;
-  margin-right: 7vh;
+  justify-content: flex-end;
+  align-items: flex-start;
   height: 20vh;
+  width: 1330px;
   position: fixed;
   top: 0;
-  background-color: rgba(0,0,0,0);
+  background-color: clear;
   z-index: 5;
   /* margin-top: 7vh; */
+`
+const InnerDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 500px;
+  background-color: #00000071;
 `
 const Brand = styled.div`
   color: #ACDFFB;
@@ -32,7 +40,7 @@ const TextDiv = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-end;
 `
 
 const Spacer = styled.div`
@@ -54,14 +62,13 @@ interface HeaderProps {
 const Header = (props: HeaderProps): JSX.Element => {
   return (
     <OuterDiv>
-      <Logo src='/logo.png '></Logo>
-      <Spacer />
+      <InnerDiv>
       <TextDiv>
-        <HeaderText text={'home'} selected={props.page === 'home'} link='/' />
-        <HeaderText text={'about'} selected={props.page === 'about'} link='/about' />
-        <HeaderText text={'resume'} selected={props.page === 'resume'} link='/resume' />
+        <HeaderText text={'work'} selected={props.page === 'home'} link='/' />
+        <HeaderText text={'about/resume'} selected={props.page === 'about'} link='/about' />
         <HeaderText text={'art'} selected={props.page === 'art'} link='/art' />
       </TextDiv>
+      </InnerDiv>
     </OuterDiv>
   )
 }

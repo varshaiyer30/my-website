@@ -16,6 +16,7 @@ const InnerDiv = styled.div`
     align-items: center;
     height: 60%;
     cursor: default;
+    padding-bottom:50px;
 `
 const OuterILikeToDesignDiv = styled.div`
 /* I'm Varsha */
@@ -23,6 +24,7 @@ const OuterILikeToDesignDiv = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 `
 const Picture = styled.img`
   width: 180px;
@@ -64,6 +66,13 @@ color: white;
   font-size: 72px;
 }
 `
+const Scenic = styled.a`
+  color: #c5c3c3;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: lighter;
+  padding-top: 20px;
+`
 const PeriodDiv = styled.div`
 color: white;
   font-weight: bold;
@@ -99,11 +108,12 @@ export default function IntroDiv() {
                     <DesignDiv>design</DesignDiv>
                     <PeriodDiv>.</PeriodDiv>
                 </OuterILikeToDesignDiv>
+                <Scenic>take the scenic route</Scenic>
                 <Player
                     autoplay
                     loop
                     src="https://assets1.lottiefiles.com/packages/lf20_yjh6sxqn.json"
-                    style={{ height: '200px', width: '200px'}}
+                    style={{ height: '160px', width: '160px'}}
                 >
                 </Player>
             </InnerDiv>

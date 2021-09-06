@@ -44,7 +44,7 @@ color: white;
   font-weight: 400;
   font-size: 48px;
   @media (min-width: 43em){
-  font-size: 72px;
+  font-size: 64px;
 }
 @media (min-width: 62em){
   font-size: 72px;
@@ -56,7 +56,7 @@ color: white;
   font-size: 48px;
   margin-left: 2px;
   @media (min-width: 43em){
-  font-size: 72px;
+  font-size: 64px;
 }
 @media (min-width: 62em){
   font-size: 72px;
@@ -68,7 +68,7 @@ color: #ACDFFB;
   font-size: 48px;
   margin-left:15px;
   @media (min-width: 43em){
-  font-size: 72px;
+  font-size: 64px;
 }
 @media (min-width: 62em){
   font-size: 72px;

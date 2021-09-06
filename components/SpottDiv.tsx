@@ -24,11 +24,12 @@ const InnerDiv = styled.div`
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-between;
         height: 500px;
-        width: 580px;
+        width: 550px;
         padding-bottom: 0px;
+        padding-right: 30px;
     }
     @media (min-width: 62em){
         display: flex;
@@ -50,7 +51,9 @@ const SMockup = styled(animated.img)`
     box-shadow: 0px 1px 4px 5px rgba(230, 210, 161, 0.25);
     filter: drop-shadow(0px 20px 40px rgba(102, 102, 102, 0.25));
     @media(min-width: 43em){
-        height: 600px;
+        height: 550px;
+        margin-left: 10px;
+        
     }
     @media (min-width: 62em){
         height: 630px;
@@ -72,8 +75,9 @@ const SpottText = styled.div`
         align-items: flex-end;
         justify-content: space-between;
         height: 220px;
-        width: 280px;
-        padding-bottom: 250px;
+        width: 250px;
+        margin-left: 50px;
+        padding-bottom: 20px;
     }
     @media (min-width: 62em){
         display: flex;
@@ -146,7 +150,7 @@ const RightDescription = styled.div`
     text-align: left;
     width: 300px;
     @media(min-width: 43em){
-        width: 280px;
+        width: 250px;
         text-align: right;
         margin-top: 5px;
     }

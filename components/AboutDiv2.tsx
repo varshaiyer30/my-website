@@ -23,10 +23,12 @@ const InnerDiv = styled.div`
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-end;
         height: 500px;
         width: 580px;
         padding-bottom: 0px;
+        padding-top: 30px;
+        margin-left: 30px;
     }
     @media (min-width: 62em){
         display: flex;
@@ -37,10 +39,11 @@ const InnerDiv = styled.div`
         height: 700px;
         padding-bottom: 0px;
         margin-right: 80px;
+        margin-left: 0px;
     }
 `
 const ITMockup = styled(animated.img)`
-    height: 470px;
+    height: 100px;
     border-width: 1px;
     border-color: white;
     border-radius: 32px;
@@ -48,7 +51,7 @@ const ITMockup = styled(animated.img)`
     box-shadow: 0px 1px 4px 5px rgba(54, 93, 85, 0.6);
     filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.9)); 
     @media(min-width: 43em){
-        height: 600px;
+        height: 250px;
     }
     @media (min-width: 62em){
         height: 320px;
@@ -56,6 +59,25 @@ const ITMockup = styled(animated.img)`
         margin-left: 60px;
     }
 `
+const PictureDiv = styled.div`
+@media(min-width: 43em){
+        height: 550px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }
+    @media(min-width: 62em){
+        height: 500px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+`
+
 
 const LeftDetail = styled.div`
     font-size: 16px;
@@ -64,7 +86,8 @@ const LeftDetail = styled.div`
     width: 300px;
     @media(min-width: 43em){
         font-size: 24px;
-        width: 400px;
+        width: 300px;
+
     }
     @media (min-width: 62em){
         font-size: 36px;
@@ -88,8 +111,9 @@ const IthacaTrailsText = styled.div`
         align-items: flex-start;
         justify-content: space-between;
         height: 220px;
-        width: 280px;
-        padding-bottom: 220px;
+        width: 300px;
+        padding-bottom: 150px;
+        margin-right: 60px;
     }
     @media (min-width: 62em){
         display: flex;
@@ -106,6 +130,12 @@ const IthacaTrailsText = styled.div`
 const BlueHighlight = styled.a`
     color: #ACDFFB;
     font-size: 36px;
+    @media(min-width: 43em){
+        font-size: 24px;
+    }
+    @media(min-width: 62em){
+        font-size: 36px;
+    }
 `
 
 export default function IthTrailsDiv(){
@@ -139,6 +169,7 @@ export default function IthTrailsDiv(){
                 <IthacaTrailsText>
                     <LeftDetail>I am an aspiring <BlueHighlight>UI/UX designer</BlueHighlight> and software engineer, and I seize any opportunity to become a better one. My <BlueHighlight>love and passion</BlueHighlight> for design continues to grow everyday.</LeftDetail>
                 </IthacaTrailsText>
+                <PictureDiv>
                 <ITMockup 
                     onMouseEnter={() => setIHover1(true)}
                     onMouseLeave={() => setIHover1(false)}
@@ -151,6 +182,7 @@ export default function IthTrailsDiv(){
                     src='/gates.jpeg'
                     style={iHoverState2}>
                 </ITMockup>
+                </PictureDiv>
 
                 <Player
                     autoplay

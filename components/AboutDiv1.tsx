@@ -23,11 +23,11 @@ const InnerDiv = styled.div`
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-between;
         height: 500px;
         width: 580px;
-        padding-bottom: 0px;
+        padding-bottom: 70px;
     }
     @media (min-width: 62em){
         display: flex;
@@ -47,7 +47,7 @@ const SMockup = styled(animated.img)`
     border-radius: 32px;
     border-style: solid;
     @media(min-width: 43em){
-        height: 600px;
+        height: 380px;
     }
     @media (min-width: 62em){
         height: 500px;
@@ -72,8 +72,9 @@ const SpottText = styled.div`
         align-items: flex-end;
         justify-content: space-between;
         height: 220px;
-        width: 280px;
-        padding-bottom: 250px;
+        width: 300px;
+        margin-left: 10px;
+        padding-bottom: 60px;
     }
     @media (min-width: 62em){
         display: flex;
@@ -96,7 +97,7 @@ const RightDetail = styled.div`
     @media(min-width: 43em){
         font-size: 24px;
         text-align: right;
-        width: 400px;
+        width: 280px;
         margin-top: 5px;
     }
     @media (min-width: 62em){
@@ -108,10 +109,22 @@ const RightDetail = styled.div`
 const RedHighlight = styled.a`
     color: #C23333;
     font-size: 36px;
+    @media(min-width: 43em){
+        font-size: 24px;
+    }
+    @media(min-width: 62em){
+        font-size: 36px;
+    }
 `
 const BlueHighlight = styled.a`
     color: #ACDFFB;
     font-size: 36px;
+    @media(min-width: 43em){
+        font-size: 24px;
+    }
+    @media(min-width: 62em){
+        font-size: 36px;
+    }
 `
 export default function SpottDiv(){
     const [sHover, setSHover] = useState(false)

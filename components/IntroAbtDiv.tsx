@@ -17,6 +17,12 @@ const InnerDiv = styled.div`
     align-items: center;
     height: 60%;
     cursor: default;
+    @media (min-width: 43em){
+  height: 40%
+}
+@media (min-width: 62em){
+  height: 60%;
+}
 `
 const OuterILikeToDesignDiv = styled.div`
 /* I'm Varsha */
@@ -32,7 +38,8 @@ font-weight: 300;
   color: white;
   margin-bottom: 10px;
   @media (min-width: 43em){
-  font-size: 72px;
+  font-size: 50px;
+  margin-top: 20px;
 }
 @media (min-width: 62em){
   font-size: 50px;
@@ -44,7 +51,7 @@ color: white;
   font-weight: 400;
   font-size: 48px;
   @media (min-width: 43em){
-  font-size: 72px;
+  font-size: 64px;
 }
 @media (min-width: 62em){
   font-size: 72px;
@@ -56,7 +63,7 @@ color: white;
   font-size: 48px;
   margin-left: 2px;
   @media (min-width: 43em){
-  font-size: 72px;
+  font-size: 64px;
 }
 @media (min-width: 62em){
   font-size: 72px;
@@ -68,7 +75,7 @@ color: #ACDFFB;
   font-size: 48px;
   margin-left:15px;
   @media (min-width: 43em){
-  font-size: 72px;
+  font-size: 64px;
 }
 @media (min-width: 62em){
   font-size: 72px;

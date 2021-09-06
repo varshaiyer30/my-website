@@ -41,7 +41,7 @@ const InnerDiv = styled.div`
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-between;
         height: 500px;
         width: 580px;
@@ -66,7 +66,7 @@ const VMockup = styled(animated.img)`
     box-shadow: 0px 1px 4px 5px rgba(255, 255, 255, 0.25);
     filter: drop-shadow(0px 20px 40px rgba(102, 102, 102, 0.25));
     @media(min-width: 43em){
-        height: 600px;
+        height: 550px;
     }
     @media (min-width: 62em){
         height: 630px;
@@ -86,10 +86,11 @@ const VSCOText = styled.div`
         flex-direction: column;
         align-items: flex-end;
         margin-top: 480px;
-        justify-content: space-between;
+        justify-content: center;
         height: 220px;
         width: 280px;
-        padding-bottom: 280px;
+        padding-bottom: 10px;
+        margin-left: 40px;
     }
     @media (min-width: 62em){
         display: flex;
@@ -112,9 +113,9 @@ const RightTitle = styled.div`
     text-align: left;
     width: 300px;
     @media(min-width: 43em){
-        font-size: 36px;
+        font-size: 32px;
         text-align: right;
-        width: 300px;
+        width: 400px;
     }
     @media (min-width: 62em){
         font-size: 48px;

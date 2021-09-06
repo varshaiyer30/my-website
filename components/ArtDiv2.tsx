@@ -23,11 +23,12 @@ const InnerDiv = styled.div`
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-between;
         height: 500px;
         width: 580px;
         padding-bottom: 0px;
+        padding-left: 70px;
     }
     @media (min-width: 62em){
         flex-direction: row;
@@ -46,7 +47,7 @@ const ArtandLabelDiv = styled.div`
     padding-bottom: 70px;
     @media(min-width: 43em){
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
         height: 500px;
@@ -66,7 +67,8 @@ const SMockup = styled(animated.img)`
     height: 450px;
     aspect-ratio: unset;
     @media(min-width: 43em){
-        height: 600px;
+        width: 500px;
+        height: 399px;
     }
     @media (min-width: 62em){
         margin-top: 30px;
@@ -86,12 +88,12 @@ const SpottText = styled.div`
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;
-        margin-top: 480px;
+        margin-top: 20px;
         align-items: flex-end;
         justify-content: space-between;
         height: 220px;
-        width: 280px;
-        padding-bottom: 250px;
+        width: 500px;
+        padding-bottom: 0px;
     }
     @media (min-width: 62em){
         display: flex;

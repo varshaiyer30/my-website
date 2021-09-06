@@ -23,10 +23,11 @@ const InnerDiv = styled.div`
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
-        align-items: center;
-        height: 500px;
+        align-items: flex-end;
+        height: 520px;
         width: 580px;
         padding-bottom: 0px;
+        padding-left: 10px;
     }
     @media (min-width: 62em){
         display: flex;
@@ -47,7 +48,7 @@ const ITMockup = styled(animated.img)`
     box-shadow: 0px 1px 4px 5px rgba(54, 93, 85, 0.6);
     filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.9)); 
     @media(min-width: 43em){
-        height: 600px;
+        height: 550px;
     }
     @media (min-width: 62em){
         height: 630px;
@@ -110,6 +111,7 @@ const LeftDescription = styled.div`
     width: 300px;
     @media(min-width: 43em){
         margin-top: 5px;
+        width: 260px;
     }
     @media (min-width: 62em){
         font-size: 18px;
@@ -131,11 +133,12 @@ const IthacaTrailsText = styled.div`
         display: flex;
         flex-direction: column;
         margin-top: 480px;
+        margin-right: 20px;
         align-items: flex-start;
         justify-content: space-between;
-        height: 220px;
+        height: 100px;
         width: 280px;
-        padding-bottom: 220px;
+        padding-bottom: 80px;
     }
     @media (min-width: 62em){
         display: flex;

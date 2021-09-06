@@ -50,7 +50,7 @@ const ArtandLabelDiv = styled.div`
         align-items: center;
         justify-content: space-between;
         height: 500px;
-        width: 580px;
+        width: 350px;
         padding-bottom: 0px;
     }
     @media (min-width: 62em){
@@ -64,6 +64,7 @@ const ArtandLabelDiv = styled.div`
 `
 const Buddha = styled(animated.img)`
     @media(min-width: 43em){
+        height: 240px;
     }
     @media (min-width: 62em){
       height: 392.79px;
@@ -74,6 +75,7 @@ const Buddha = styled(animated.img)`
 `
 const Turtle = styled(animated.img)`
     @media(min-width: 43em){
+        height: 230px;
     }
     @media (min-width: 62em){
         margin-top: 52px;

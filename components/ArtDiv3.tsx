@@ -23,10 +23,11 @@ const InnerDiv = styled.div`
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-between;
         height: 500px;
-        width: 580px;
+        width: 760px;
+        margin-left: 90px;
         padding-bottom: 0px;
     }
     @media (min-width: 62em){
@@ -46,11 +47,12 @@ const ArtandLabelDiv = styled.div`
     padding-bottom: 70px;
     @media(min-width: 43em){
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         height: 500px;
-        width: 580px;
+        width: 1000px;
+        margin-left: 40px;
         padding-bottom: 0px;
     }
     @media (min-width: 62em){
@@ -66,7 +68,8 @@ const Buddha = styled(animated.img)`
     height: 450px;
     aspect-ratio: unset;
     @media(min-width: 43em){
-        height: 600px;
+        width: 250px;
+        height: 325px;
     }
     @media (min-width: 62em){
         margin-top: 30px;
@@ -77,7 +80,9 @@ const Turtle = styled(animated.img)`
     height: 450px;
     aspect-ratio: unset;
     @media(min-width: 43em){
-        height: 600px;
+        margin-top: 22px;
+        height: 300px;
+        width: 216px;
     }
     @media (min-width: 62em){
         margin-top: 30px;
@@ -97,12 +102,12 @@ const SpottText = styled.div`
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;
-        margin-top: 480px;
+        margin-top: 0px;
         align-items: flex-end;
-        justify-content: space-between;
-        height: 220px;
-        width: 280px;
-        padding-bottom: 250px;
+        justify-content: center;
+        height: 90px;
+        width: 250px;
+        padding-bottom: 0px;
     }
     @media (min-width: 62em){
         display: flex;
@@ -126,7 +131,7 @@ const RightTitle = styled.div`
     text-align: left;
     width: 300px;
     @media(min-width: 43em){
-        font-size: 36px;
+        font-size: 30px;
         text-align: right;
         width: 400px; 
     }
@@ -142,7 +147,7 @@ const RightDetail = styled.div`
     text-align: left;
     width: 300px;
     @media(min-width: 43em){
-        font-size: 24px;
+        font-size: 16px;
         text-align: right;
         width: 400px;
         margin-top: 5px;

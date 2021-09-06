@@ -44,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
 export default function Home() {
   return (
     <div>
-      <Header page={'home'} />
+      {/* <Header page={'home'} /> */}
       <FirstDiv>
         <Head>
           <title>home</title>

@@ -17,8 +17,6 @@ const ContactDiv = styled.div`
     @media(min-width: 43em){
         margin-left: 300px;
         width: 500px;
-        border-style: solid;
-        border-color: white;
         height: 50px;
         margin-bottom: 100px;
     }

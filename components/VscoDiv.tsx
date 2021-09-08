@@ -100,7 +100,7 @@ const VSCOText = styled.div`
         justify-content: space-between;
         height: 200px;
         width: 400px;
-        padding-bottom: 110px;
+        padding-bottom: 140px;
         margin-left: 100px;
     }
     
@@ -177,6 +177,23 @@ const RightDescription = styled.div`
         margin-top: 5px;
     }
 `
+const RightClicktoLearn = styled.div`
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    width: 300px;
+    @media(min-width: 43em){
+        width: 250px;
+        text-align: right;
+        margin-top: 5px;
+    }
+    @media (min-width: 62em){
+        font-size: 18px;
+        text-align: right;
+        width: 330px;
+        margin-top: 5px;
+    }
+`
 const ExternalLink = styled.a`
     text-decoration: none;
 `
@@ -213,6 +230,8 @@ export default function VscoDiv(){
                         <RightDetail>Medium Bootcamp</RightDetail>
                         <RightDates>{"Sept \'20 - Feb \'21"}</RightDates>
                         <RightDescription>{"This is my first case study I completed as a part of a digital product design class I took during my first semester as a student at Cornell University. It was published by UX Collective\’s Medium publication - Bootcamp."}</RightDescription>
+                        <RightClicktoLearn>click to learn more
+                    </RightClicktoLearn>
                     </VSCOText>
                     <Player
                     autoplay

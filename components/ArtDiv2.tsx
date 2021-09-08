@@ -59,7 +59,7 @@ const ArtandLabelDiv = styled.div`
         justify-content: center;
         width: 777px;
         height: 700px;
-        margin-left: 74px;
+        margin-left: 50px;
     }
 
 `
@@ -73,6 +73,7 @@ const SMockup = styled(animated.img)`
     @media (min-width: 62em){
         margin-top: 30px;
         width: 620px;
+        height: 492.06px;
     }
 `
 const SpottText = styled.div`

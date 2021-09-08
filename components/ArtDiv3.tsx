@@ -35,6 +35,7 @@ const InnerDiv = styled.div`
         align-items: flex-end;
         width: 1250px;
         height: 700px;
+        padding-bottom: 0px;
     }
 `
 const ArtandLabelDiv = styled.div`
@@ -57,10 +58,11 @@ const ArtandLabelDiv = styled.div`
     }
     @media (min-width: 62em){
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         width: 1400px;
-        height: 700px;
-        margin-left: 130px;
+        height: 635px;
+        margin-left: 60px;
+        margin-bottom: 30px;
     }
 
 `
@@ -73,7 +75,8 @@ const Buddha = styled(animated.img)`
     }
     @media (min-width: 62em){
         margin-top: 30px;
-        width: 400px;
+        width: 349.33px;
+        height: 450px;
     }
 `
 const Turtle = styled(animated.img)`
@@ -86,7 +89,8 @@ const Turtle = styled(animated.img)`
     }
     @media (min-width: 62em){
         margin-top: 30px;
-        width: 372px;
+        width: 324px;
+        height: 450px;
     }
 `
 const SpottText = styled.div`

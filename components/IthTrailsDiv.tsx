@@ -149,8 +149,25 @@ const IthacaTrailsText = styled.div`
         height: 200px;
         width: 400px;
         margin-right: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 90px;
     }   
+`
+const RightClicktoLearn = styled.div`
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    width: 300px;
+    @media(min-width: 43em){
+        width: 250px;
+        text-align: left;
+        margin-top: 5px;
+    }
+    @media (min-width: 62em){
+        font-size: 18px;
+        text-align: left;
+        width: 330px;
+        margin-top: 5px;
+    }
 `
 const ExternalLink = styled.a`
     text-decoration: none;
@@ -181,6 +198,8 @@ export default function IthTrailsDiv(){
                     <LeftDetail>AppDev Hack Challenge</LeftDetail>
                     <LeftDates>{"Dec \'20 - Feb \'21"}</LeftDates>
                     <LeftDescription>{"As a part of hack challenge organized by Cornell University\'s AppDev project team, I designed a new app for finding trails in Ithaca, New York."}</LeftDescription>
+                    <RightClicktoLearn>click to learn more
+                    </RightClicktoLearn>
                 </IthacaTrailsText>
                 <ITMockup 
                     onMouseEnter={() => setIHover(true)}

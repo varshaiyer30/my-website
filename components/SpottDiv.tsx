@@ -88,7 +88,7 @@ const SpottText = styled.div`
         height: 200px;
         width: 400px;
         /* margin-left: 15px; */
-        padding-bottom: 130px;
+        padding-bottom: 160px;
     }
 `
 const RightTitle = styled.div`
@@ -161,6 +161,23 @@ const RightDescription = styled.div`
         margin-top: 5px;
     }
 `
+const RightClicktoLearn = styled.div`
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    width: 300px;
+    @media(min-width: 43em){
+        width: 250px;
+        text-align: right;
+        margin-top: 5px;
+    }
+    @media (min-width: 62em){
+        font-size: 18px;
+        text-align: right;
+        width: 330px;
+        margin-top: 5px;
+    }
+`
 const Spacer = styled.div`
     width: 100px;
 `
@@ -186,7 +203,8 @@ export default function SpottDiv(){
                     onMouseEnter={() => setSHover(true)} 
                     onMouseLeave={() => setSHover(false)} 
                     src='/spott.png' 
-                    style={sHoverState}/>
+                    style={sHoverState}></SMockup>
+                
                 <SpottText onMouseEnter={() => setSHover(true)} 
                     onMouseLeave={() => setSHover(false)} >
                     <RightTitle>spott</RightTitle>
@@ -194,6 +212,8 @@ export default function SpottDiv(){
                     <RightDates>{"May \'21 - Aug \'21"}</RightDates>
                     <RightDescription>spott is a social map for finding what’s happening around you. I designed screens for a new groups feature, improved the current UI, developed some screens in the cross-platform Flutter app, and designed a waitlist website to build hype around the app.
                     </RightDescription>
+                    <RightClicktoLearn>click to learn more
+                    </RightClicktoLearn>
                 </SpottText>
                 <Player
                     autoplay

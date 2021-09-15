@@ -22,18 +22,21 @@ const InnerDiv = styled.div`
     padding-bottom: 70px;
     @media(min-width: 43em){
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-end;
         justify-content: space-between;
-        height: 500px;
-        width: 580px;
-        padding-bottom: 0px;
+        height: 640px;
+        width: 670px;
+        padding-left: 20px;
+        padding-bottom: 0px;  
     }
     @media (min-width: 62em){
         flex-direction: row;
         align-items: flex-end;
         width: 1250px;
         height: 700px;
+        padding-left: 0px;
+        padding-right: 50px;
     }
 `
 const ArtandLabelDiv = styled.div`
@@ -46,12 +49,15 @@ const ArtandLabelDiv = styled.div`
     padding-bottom: 70px;
     @media(min-width: 43em){
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
         height: 500px;
-        width: 580px;
+        width: 300px;
         padding-bottom: 0px;
+        /* margin-right: 20px; */
+        margin-right: 190px;
+
     }
     @media (min-width: 62em){
         flex-direction: column;
@@ -59,6 +65,7 @@ const ArtandLabelDiv = styled.div`
         width: 1400px;
         height: 700px;
         margin-left: 55px;
+        margin-right:0px;
     }
 
 `
@@ -66,7 +73,9 @@ const Buddha = styled(animated.img)`
     height: 200px;
     aspect-ratio: unset;
     @media(min-width: 43em){
-        height: 600px;
+        height: 220px;
+        margin-left: 20px;
+
     }
     @media (min-width: 62em){
         height: 407.6px;
@@ -79,7 +88,9 @@ const Turtle = styled(animated.img)`
     height: 450px;
     aspect-ratio: unset;
     @media(min-width: 43em){
-        height: 600px;
+        height: 180px;
+        margin-left: 60px;
+
     }
     @media (min-width: 62em){
         margin-top: 90px;
@@ -100,12 +111,14 @@ const SpottText = styled.div`
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;
-        margin-top: 480px;
+        margin-top: 20px;
         align-items: flex-end;
-        justify-content: space-between;
-        height: 220px;
+        justify-content: center;
+        height: 70px;
         width: 280px;
-        padding-bottom: 250px;
+        padding-bottom: 0px;
+        margin-bottom: 50px;
+
     }
     @media (min-width: 62em){
         display: flex;
@@ -135,12 +148,14 @@ const GardenText = styled.div`
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;
-        margin-top: 480px;
+        margin-top: 20px;
         align-items: flex-end;
         justify-content: space-between;
-        height: 220px;
+        height: 70px;
         width: 280px;
-        padding-bottom: 250px;
+        padding-bottom: 0px;
+        margin-left: 50px;
+
     }
     @media (min-width: 62em){
         display: flex;
@@ -167,6 +182,7 @@ const RightTitle = styled.div`
         font-size: 36px;
         text-align: right;
         width: 400px; 
+        
     }
     @media (min-width: 62em){
         font-size: 48px;
@@ -184,6 +200,7 @@ const RightDetail = styled.div`
         text-align: right;
         width: 400px;
         margin-top: 5px;
+        
     }
     @media (min-width: 62em){
         font-size: 36px;
@@ -203,6 +220,7 @@ const RightDates = styled.div`
         text-align: right;
         width: 400px;
         margin-top: 5px;
+        
     }
     @media (min-width: 62em){
         font-size: 24px;
@@ -221,6 +239,7 @@ const RightDescription = styled.div`
         width: 280px;
         text-align: right;
         margin-top: 5px;
+        
     }
     @media (min-width: 62em){
         font-size: 18px;

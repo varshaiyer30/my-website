@@ -15,10 +15,10 @@ const ContactDiv = styled.div`
     margin-left: 35px;
     margin-bottom: 50px;
     @media(min-width: 43em){
-        margin-left: 300px;
-        width: 500px;
+        margin-left: 170px;
+        width: 450px;
         height: 50px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
     @media (min-width: 62em){
         width: 450px;
@@ -32,6 +32,7 @@ const GitDiv = styled.div`
     flex-direction: row;
     margin-bottom: 20px;
     justify-content: center;
+
 `
 const GitText = styled.a`
     color: white;

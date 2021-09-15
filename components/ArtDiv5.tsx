@@ -22,18 +22,21 @@ const InnerDiv = styled.div`
     padding-bottom: 70px;
     @media(min-width: 43em){
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        height: 500px;
-        width: 580px;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        height: 600px;
+        width: 600px;
         padding-bottom: 0px;
+        margin-top: 60px;
     }
     @media (min-width: 62em){
         flex-direction: row;
         align-items: flex-end;
         width: 1250px;
         height: 700px;
+        margin-top: 0px;
+        margin-left: 50px;
     }
 `
 const ArtandLabelDiv = styled.div`
@@ -46,12 +49,13 @@ const ArtandLabelDiv = styled.div`
     padding-bottom: 70px;
     @media(min-width: 43em){
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        height: 500px;
+        height: 400px;
         width: 580px;
         padding-bottom: 0px;
+        margin-top: 70px;
     }
     @media (min-width: 62em){
         flex-direction: column;
@@ -66,7 +70,7 @@ const Buddha = styled(animated.img)`
     height: 200px;
     aspect-ratio: unset;
     @media(min-width: 43em){
-        height: 600px;
+        height: 200px;
     }
     @media (min-width: 62em){
         height: 375px;
@@ -79,7 +83,8 @@ const Turtle = styled(animated.img)`
     height: 450px;
     aspect-ratio: unset;
     @media(min-width: 43em){
-        height: 600px;
+        height: 200px;
+        margin-left: 0px;
     }
     @media (min-width: 62em){
         margin-top: 30px;
@@ -101,12 +106,12 @@ const SpottText = styled.div`
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;
-        margin-top: 480px;
+        margin-top: 20px;
         align-items: flex-end;
-        justify-content: space-between;
-        height: 220px;
+        justify-content: center;
+        height: 80px;
         width: 280px;
-        padding-bottom: 250px;
+        padding-bottom: 0px;
     }
     @media (min-width: 62em){
         display: flex;

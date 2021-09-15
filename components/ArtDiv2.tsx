@@ -35,6 +35,7 @@ const InnerDiv = styled.div`
         align-items: flex-end;
         width: 777px;
         height: 700px;
+        padding-bottom: 0px;
     }
 `
 const ArtandLabelDiv = styled.div`
@@ -60,6 +61,7 @@ const ArtandLabelDiv = styled.div`
         width: 777px;
         height: 700px;
         margin-left: 50px;
+        padding-bottom: 0px;
     }
 
 `

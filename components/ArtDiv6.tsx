@@ -22,11 +22,12 @@ const InnerDiv = styled.div`
     padding-bottom: 70px;
     @media(min-width: 43em){
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-end;
         justify-content: space-between;
-        height: 500px;
+        height: 700px;
         width: 580px;
+        margin-bottom: 190px;
         padding-bottom: 0px;
     }
     @media (min-width: 62em){
@@ -34,6 +35,7 @@ const InnerDiv = styled.div`
         align-items: flex-end;
         width: 1250px;
         height: 700px;
+        margin-bottom: 0px;
     }
 `
 const ArtandLabelDiv = styled.div`
@@ -46,19 +48,20 @@ const ArtandLabelDiv = styled.div`
     padding-bottom: 70px;
     @media(min-width: 43em){
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
         height: 500px;
-        width: 350px;
+        width: 580px;
         padding-bottom: 0px;
+        margin-top: 80px;
     }
     @media (min-width: 62em){
         flex-direction: column;
         justify-content: center;
         width: 1400px;
         height: 700px;
-        margin-left: 100px;
+        margin-left: 105px;
     }
 
 `
@@ -97,12 +100,12 @@ const SpottText = styled.div`
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;
-        margin-top: 480px;
+        margin-top: 20px;
         align-items: flex-end;
         justify-content: space-between;
-        height: 220px;
+        height: 30px;
         width: 280px;
-        padding-bottom: 250px;
+        padding-bottom: 0px;
     }
     @media (min-width: 62em){
         display: flex;
@@ -132,12 +135,12 @@ const FireText = styled.div`
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;
-        margin-top: 480px;
+        margin-top: 30px;
         align-items: flex-end;
         justify-content: space-between;
-        height: 220px;
-        width: 280px;
-        padding-bottom: 250px;
+        height: 30px;
+        width: 300px;
+        padding-bottom: 0px;
     }
     @media (min-width: 62em){
         display: flex;
@@ -179,7 +182,7 @@ const RightDetail = styled.div`
     @media(min-width: 43em){
         font-size: 24px;
         text-align: right;
-        width: 400px;
+        width: 100px;
         margin-top: 5px;
     }
     @media (min-width: 62em){
@@ -198,7 +201,7 @@ const RightDates = styled.div`
     @media(min-width: 43em){
         font-size: 20px;
         text-align: right;
-        width: 400px;
+        width: 330px;
         margin-top: 5px;
     }
     @media (min-width: 62em){

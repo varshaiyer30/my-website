@@ -22,13 +22,14 @@ const InnerDiv = styled.div`
     padding-bottom: 70px;
     @media(min-width: 43em){
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-end;
         justify-content: space-between;
         height: 500px;
-        width: 760px;
-        margin-left: 90px;
+        width: 600px;
+        margin-left: 0px;
         padding-bottom: 0px;
+        margin-bottom: 290px;
     }
     @media (min-width: 62em){
         flex-direction: row;
@@ -36,6 +37,8 @@ const InnerDiv = styled.div`
         width: 1250px;
         height: 700px;
         padding-bottom: 0px;
+        margin-bottom: 0px;
+        margin-left: 60px;
     }
 `
 const ArtandLabelDiv = styled.div`
@@ -52,7 +55,7 @@ const ArtandLabelDiv = styled.div`
         align-items: center;
         justify-content: center;
         height: 500px;
-        width: 1000px;
+        width: 600px;
         margin-left: 40px;
         padding-bottom: 0px;
     }
@@ -70,12 +73,12 @@ const Buddha = styled(animated.img)`
     height: 450px;
     aspect-ratio: unset;
     @media(min-width: 43em){
-        width: 250px;
-        height: 325px;
+
+        height: 300px;
     }
     @media (min-width: 62em){
         margin-top: 30px;
-        width: 349.33px;
+
         height: 450px;
     }
 `
@@ -84,12 +87,12 @@ const Turtle = styled(animated.img)`
     aspect-ratio: unset;
     @media(min-width: 43em){
         margin-top: 22px;
-        height: 300px;
-        width: 216px;
+        height: 290px;
+
     }
     @media (min-width: 62em){
         margin-top: 30px;
-        width: 324px;
+
         height: 450px;
     }
 `
@@ -120,7 +123,7 @@ const SpottText = styled.div`
         align-items: flex-end;
         justify-content: flex-end;
         height: 200px;
-        width: 380px;
+        width: 360px;
         margin-left: 0px;
         padding-bottom: 0px;
         margin-bottom: 30px;

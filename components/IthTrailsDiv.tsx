@@ -47,8 +47,10 @@ const ITMockup = styled(animated.img)`
     border-style: solid;
     box-shadow: 0px 1px 4px 5px rgba(54, 93, 85, 0.6);
     filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.9)); 
+    margin-bottom: 20px;
     @media(min-width: 43em){
         height: 550px;
+        margin-bottom: 0px;
     }
     @media (min-width: 62em){
         height: 630px;

@@ -43,6 +43,14 @@ const InnerDiv = styled.div`
     }
 `
 const OuterImageDiv = styled.div`
+height: 450px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-right: 50px;
     @media(min-width: 43em){
         height: 450px;
         width: 400px;
@@ -65,6 +73,13 @@ const OuterImageDiv = styled.div`
     }
 `
 const InnerImageDiv = styled.div`
+height: 350px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
 @media(min-width: 43em){
     height: 350px;
     width: 300px;
@@ -83,16 +98,19 @@ const InnerImageDiv = styled.div`
 }
 `
 const SMockup = styled(animated.img)`
-    height: 450px;
+    height: 200px;
+    margin-left: 20px;
     border-width: 1px;
     border-color: white;
     border-radius: 32px;
     border-style: solid;
     @media(min-width: 43em){
         height: 180px;
+        margin-left: 0px;
     }
     @media (min-width: 62em){
         height: 260px;
+        margin-left: 0px;
         /* margin-bottom: 100px; */
         /* margin-right: 20px; */
     }
@@ -105,7 +123,7 @@ const SpottText = styled.div`
     justify-content: space-between;
     height: 200px;
     width: 330px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     cursor: default;
     @media(min-width: 43em){
         display: flex;
@@ -132,7 +150,7 @@ const SpottText = styled.div`
     }
 `
 const RightDetail = styled.div`
-    font-size: 16px;
+    font-size: 25px;
     color: white;
     text-align: left;
     width: 300px;
@@ -149,6 +167,8 @@ const RightDetail = styled.div`
     }
 `
 const RedHighlight = styled.a`
+font-size: 25px;
+        color: #C23333;
     @media(min-width: 43em){
         font-size: 24px;
         color: #C23333;
@@ -159,6 +179,8 @@ const RedHighlight = styled.a`
     }
 `
 const BlueHighlight = styled.a`
+font-size: 25px;
+        color: #ACDFFB;
     @media(min-width: 43em){
         font-size: 24px;
         color: #ACDFFB;

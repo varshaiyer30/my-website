@@ -34,8 +34,9 @@ const OuterILikeToDesignDiv = styled.div`
 `
 const HiDiv = styled.div`
 font-weight: 300;
-  font-size: 48px;
+  font-size: 38px;
   color: white;
+  width: 300px;
   margin-bottom: 10px;
   @media (min-width: 43em){
   font-size: 50px;
@@ -49,7 +50,8 @@ font-weight: 300;
 const ILikeToDiv = styled.div`
 color: white;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 35px;
+  width: 190px;
   @media (min-width: 43em){
   font-size: 64px;
 }
@@ -60,7 +62,7 @@ color: white;
 const PeriodDiv = styled.div`
 color: white;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 35px;
   margin-left: 2px;
   @media (min-width: 43em){
   font-size: 64px;
@@ -72,13 +74,15 @@ color: white;
 const DesignDiv = styled.div`
 color: #ACDFFB;
   font-weight: bold;
-  font-size: 48px;
-  margin-left:15px;
+  font-size: 35px;
+  margin-left:8px;
   @media (min-width: 43em){
   font-size: 64px;
+  margin-left:15px;
 }
 @media (min-width: 62em){
   font-size: 72px;
+  margin-left:15px;
 }
 `
 const Link = styled.a`

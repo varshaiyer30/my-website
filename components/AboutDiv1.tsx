@@ -41,7 +41,7 @@ const InnerDiv = styled.div`
     }
 `
 const SMockup = styled(animated.img)`
-    height: 450px;
+    height: 400px;
     border-width: 1px;
     border-color: white;
     border-radius: 32px;
@@ -63,7 +63,7 @@ const SpottText = styled.div`
     justify-content: space-between;
     height: 200px;
     width: 330px;
-    padding-bottom: 30px;
+    margin-top: 30px;
     cursor: default;
     @media(min-width: 43em){
         display: flex;
@@ -90,7 +90,7 @@ const SpottText = styled.div`
     }
 `
 const RightDetail = styled.div`
-    font-size: 16px;
+    font-size: 25px;
     color: white;
     text-align: left;
     width: 300px;
@@ -108,7 +108,7 @@ const RightDetail = styled.div`
 `
 const RedHighlight = styled.a`
     color: #C23333;
-    font-size: 36px;
+    font-size: 25px;
     @media(min-width: 43em){
         font-size: 24px;
     }
@@ -118,7 +118,7 @@ const RedHighlight = styled.a`
 `
 const BlueHighlight = styled.a`
     color: #ACDFFB;
-    font-size: 36px;
+    font-size: 25px;
     @media(min-width: 43em){
         font-size: 24px;
     }

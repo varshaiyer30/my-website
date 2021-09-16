@@ -43,15 +43,17 @@ const InnerDiv = styled.div`
     }
 `
 const ITMockup = styled(animated.img)`
-    height: 100px;
+    height: 200px;
     border-width: 1px;
     border-color: white;
     border-radius: 32px;
     border-style: solid;
     box-shadow: 0px 1px 4px 5px rgba(54, 93, 85, 0.6);
     filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.9)); 
+    margin-bottom: 20px;
     @media(min-width: 43em){
         height: 250px;
+        margin-bottom: 0px;
     }
     @media (min-width: 62em){
         height: 320px;
@@ -60,6 +62,12 @@ const ITMockup = styled(animated.img)`
     }
 `
 const PictureDiv = styled.div`
+height: 550px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 @media(min-width: 43em){
         height: 550px;
     width: 700px;
@@ -80,7 +88,7 @@ const PictureDiv = styled.div`
 
 
 const LeftDetail = styled.div`
-    font-size: 16px;
+    font-size: 25px;
     color: white;
     text-align: left;
     width: 300px;
@@ -104,6 +112,7 @@ const IthacaTrailsText = styled.div`
     height: 170px;
     width: 330px;
     padding-bottom: 30px;
+    margin-top: 20px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;
@@ -129,7 +138,7 @@ const IthacaTrailsText = styled.div`
 `
 const BlueHighlight = styled.a`
     color: #ACDFFB;
-    font-size: 36px;
+    font-size: 25px;
     @media(min-width: 43em){
         font-size: 24px;
     }

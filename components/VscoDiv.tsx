@@ -65,8 +65,10 @@ const VMockup = styled(animated.img)`
     border-style: solid;
     box-shadow: 0px 1px 4px 5px rgba(255, 255, 255, 0.25);
     filter: drop-shadow(0px 20px 40px rgba(102, 102, 102, 0.25));
+    margin-bottom: 20px;
     @media(min-width: 43em){
         height: 550px;
+        margin-bottom: 0px;
     }
     @media (min-width: 62em){
         height: 630px;

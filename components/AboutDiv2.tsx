@@ -17,7 +17,7 @@ const InnerDiv = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 300px;
-    height: 700px;
+    height: 500px;
     cursor: default;
     padding-bottom: 70px;
     @media(min-width: 43em){
@@ -50,7 +50,7 @@ const ITMockup = styled(animated.img)`
     border-style: solid;
     box-shadow: 0px 1px 4px 5px rgba(54, 93, 85, 0.6);
     filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.9)); 
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     @media(min-width: 43em){
         height: 250px;
         margin-bottom: 0px;
@@ -62,7 +62,7 @@ const ITMockup = styled(animated.img)`
     }
 `
 const PictureDiv = styled.div`
-height: 550px;
+height: 500px;
     width: 700px;
     display: flex;
     flex-direction: column;

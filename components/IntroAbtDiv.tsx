@@ -44,6 +44,7 @@ font-weight: 300;
 }
 @media (min-width: 62em){
   font-size: 50px;
+  width: 900px;
   margin-top: 60px;
 }
 `
@@ -54,9 +55,11 @@ color: white;
   width: 190px;
   @media (min-width: 43em){
   font-size: 64px;
+  
 }
 @media (min-width: 62em){
   font-size: 72px;
+  width: 380px;
 }
 `
 const PeriodDiv = styled.div`

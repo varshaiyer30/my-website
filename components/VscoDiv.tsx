@@ -37,6 +37,7 @@ const InnerDiv = styled.div`
     width: 300px;
     height: 700px;
     padding-bottom: 70px;
+    margin-top: 30px;
     cursor: pointer;
     @media(min-width: 43em){
         display: flex;

@@ -20,6 +20,7 @@ const InnerDiv = styled.div`
     height: 500px;
     cursor: default;
     padding-bottom: 70px;
+    margin-top: 50px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
@@ -29,6 +30,7 @@ const InnerDiv = styled.div`
         padding-bottom: 0px;
         padding-top: 30px;
         margin-left: 30px;
+        margin-top: 0px;
     }
     @media (min-width: 62em){
         display: flex;
@@ -40,6 +42,7 @@ const InnerDiv = styled.div`
         padding-bottom: 0px;
         margin-right: 80px;
         margin-left: 0px;
+        margin-top: 0px;
     }
 `
 const ITMockup = styled(animated.img)`
@@ -68,6 +71,7 @@ height: 400px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-top: 0px;
 @media(min-width: 43em){
         height: 550px;
     width: 700px;
@@ -75,6 +79,7 @@ height: 400px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-top: 0px;
     }
     @media(min-width: 62em){
         height: 500px;
@@ -83,6 +88,7 @@ height: 400px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 0px;
     }
 `
 

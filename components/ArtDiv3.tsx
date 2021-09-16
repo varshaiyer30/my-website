@@ -20,7 +20,7 @@ const InnerDiv = styled.div`
     width: 300px;
     height: 300px;
     padding-bottom: 0px;
-    margin-top: 120px;
+    margin-top: 90px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;
@@ -50,7 +50,7 @@ const ArtandLabelDiv = styled.div`
     align-items: center;
     justify-content: center;
     width: 300px;
-    height: 300px;
+    height: 350px;
     padding-bottom: 0px;
     margin-top: 0px;
     @media(min-width: 43em){

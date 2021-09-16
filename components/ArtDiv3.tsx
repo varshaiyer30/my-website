@@ -20,7 +20,7 @@ const InnerDiv = styled.div`
     width: 300px;
     height: 300px;
     padding-bottom: 0px;
-    margin-top: 90px;
+    margin-top: 50px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;

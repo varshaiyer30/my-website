@@ -18,7 +18,7 @@ const InnerDiv = styled.div`
     align-items: center;
     justify-content: center;
     width: 300px;
-    height: 400px;
+    height: 300px;
     padding-bottom: 0px;
     margin-top: 120px;
     @media(min-width: 43em){
@@ -50,7 +50,7 @@ const ArtandLabelDiv = styled.div`
     align-items: center;
     justify-content: center;
     width: 300px;
-    height: 400px;
+    height: 300px;
     padding-bottom: 0px;
     margin-top: 0px;
     @media(min-width: 43em){
@@ -109,7 +109,7 @@ const SpottText = styled.div`
     align-items: center;
     justify-content: center;
     height: 80px;
-    width: 160px;
+    width: 210px;
     margin-left: 10px;
     padding-bottom: 0px;
     cursor: default;
@@ -144,7 +144,7 @@ const RightTitle = styled.div`
     font-size: 19px;
     font-weight: bold;
     text-align: left;
-    width: 160px;
+    width: 210px;
     margin-bottom: 10px;
     @media(min-width: 43em){
         font-size: 30px;
@@ -163,7 +163,7 @@ const RightDetail = styled.div`
     font-size: 16px;
     color: white;
     text-align: left;
-    width: 160px;
+    width: 210px;
     @media(min-width: 43em){
         font-size: 16px;
         text-align: right;
@@ -181,7 +181,7 @@ const RightDates = styled.div`
     font-size: 14px;
     color: white;
     text-align: left;
-    width: 160px;
+    width: 210px;
     font-weight: 300;
     @media(min-width: 43em){
         font-size: 20px;

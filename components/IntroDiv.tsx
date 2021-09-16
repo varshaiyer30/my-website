@@ -108,7 +108,7 @@ export default function IntroDiv() {
                     <DesignDiv>design</DesignDiv>
                     <PeriodDiv>.</PeriodDiv>
                 </OuterILikeToDesignDiv>
-                <Scenic>take the scenic route for now</Scenic>
+                <Scenic>take the scenic route for now...</Scenic>
                 <Player
                     autoplay
                     loop

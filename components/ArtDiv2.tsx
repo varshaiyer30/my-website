@@ -18,8 +18,9 @@ const InnerDiv = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 300px;
-    height: 700px;
-    padding-bottom: 70px;
+    height: 500px;
+    padding-bottom: 0px;
+    margin-top: 30px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
@@ -29,13 +30,16 @@ const InnerDiv = styled.div`
         width: 580px;
         padding-bottom: 0px;
         padding-left: 70px;
+        margin-top: 0px;
     }
     @media (min-width: 62em){
         flex-direction: row;
         align-items: flex-end;
+        justify-content: space-between;
         width: 777px;
         height: 700px;
         padding-bottom: 0px;
+        margin-top: 0px;
     }
 `
 const ArtandLabelDiv = styled.div`
@@ -44,8 +48,8 @@ const ArtandLabelDiv = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 300px;
-    height: 700px;
-    padding-bottom: 70px;
+    height: 250px;
+    padding-bottom: 0px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;
@@ -66,7 +70,7 @@ const ArtandLabelDiv = styled.div`
 
 `
 const SMockup = styled(animated.img)`
-    height: 450px;
+    width: 300px;
     aspect-ratio: unset;
     @media(min-width: 43em){
         width: 500px;
@@ -83,10 +87,11 @@ const SpottText = styled.div`
     flex-direction: column;
     color: white;
     align-items: center;
-    justify-content: space-between;
-    height: 200px;
+    justify-content: center;
+    margin-top: 25px;
+    height: 100px;
     width: 330px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     cursor: default;
     @media(min-width: 43em){
         display: flex;
@@ -118,16 +123,19 @@ const RightTitle = styled.div`
     font-size: 24px;
     font-weight: bold;
     text-align: left;
+    margin-bottom: 10px;
     width: 300px;
     @media(min-width: 43em){
         font-size: 36px;
         text-align: right;
         width: 400px; 
+        margin-bottom: 0px;
     }
     @media (min-width: 62em){
         font-size: 48px;
         text-align: right;
         width: 600px; 
+        margin-bottom: 0px;
     } 
 `
 const RightDetail = styled.div`

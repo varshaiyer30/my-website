@@ -62,7 +62,7 @@ const ITMockup = styled(animated.img)`
     }
 `
 const PictureDiv = styled.div`
-height: 500px;
+height: 400px;
     width: 700px;
     display: flex;
     flex-direction: column;

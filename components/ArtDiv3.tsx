@@ -18,7 +18,7 @@ const InnerDiv = styled.div`
     align-items: center;
     justify-content: center;
     width: 300px;
-    height: 700px;
+    height: 500px;
     padding-bottom: 70px;
     margin-top: 20px;
     @media(min-width: 43em){
@@ -41,7 +41,7 @@ const InnerDiv = styled.div`
         padding-bottom: 0px;
         margin-bottom: 0px;
         margin-left: 60px;
-        margin-top: 0px;
+        margin-top: 20px;
     }
 `
 const ArtandLabelDiv = styled.div`
@@ -50,7 +50,7 @@ const ArtandLabelDiv = styled.div`
     align-items: center;
     justify-content: center;
     width: 300px;
-    height: 700px;
+    height: 600px;
     padding-bottom: 0px;
     margin-top: 10px;
     @media(min-width: 43em){

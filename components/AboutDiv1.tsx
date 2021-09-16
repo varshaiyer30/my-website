@@ -20,6 +20,7 @@ const InnerDiv = styled.div`
     width: 300px;
     height: 700px;
     padding-bottom: 70px;
+    margin-top: 30px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
@@ -28,6 +29,7 @@ const InnerDiv = styled.div`
         height: 500px;
         width: 580px;
         padding-bottom: 70px;
+        margin-top: 0px;
     }
     @media (min-width: 62em){
         display: flex;
@@ -38,6 +40,7 @@ const InnerDiv = styled.div`
         height: 700px;
         padding-bottom: 0px;
         margin-right: 20px;
+        margin-top: 2px;
     }
 `
 const SMockup = styled(animated.img)`

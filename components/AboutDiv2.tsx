@@ -20,7 +20,7 @@ const InnerDiv = styled.div`
     height: 500px;
     cursor: default;
     padding-bottom: 70px;
-    margin-top: 50px;
+    margin-top: 70px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;

@@ -76,7 +76,7 @@ const ArtandLabelDiv = styled.div`
 
 `
 const Buddha = styled(animated.img)`
-    height: 300px;
+    height: 280px;
     aspect-ratio: unset;
     @media(min-width: 43em){
 
@@ -89,7 +89,7 @@ const Buddha = styled(animated.img)`
     }
 `
 const Turtle = styled(animated.img)`
-    height: 300px;
+    height: 280px;
     aspect-ratio: unset;
     @media(min-width: 43em){
         margin-top: 22px;

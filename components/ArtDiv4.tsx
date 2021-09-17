@@ -18,7 +18,7 @@ const InnerDiv = styled.div`
     align-items: center;
     justify-content: center;
     width: 300px;
-    height: 500px;
+    height: 450px;
     padding-bottom: 0px;
     @media(min-width: 43em){
         display: flex;

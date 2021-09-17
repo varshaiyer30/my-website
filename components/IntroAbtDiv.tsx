@@ -51,8 +51,8 @@ font-weight: 300;
 const ILikeToDiv = styled.div`
 color: white;
   font-weight: 400;
-  font-size: 35px;
-  width: 190px;
+  font-size: 40px;
+  width: 217px;
   @media (min-width: 43em){
   font-size: 64px;
   
@@ -65,8 +65,8 @@ color: white;
 const PeriodDiv = styled.div`
 color: white;
   font-weight: bold;
-  font-size: 35px;
-  margin-left: 2px;
+  font-size: 40px;
+  margin-left: 0px;
   @media (min-width: 43em){
   font-size: 64px;
 }
@@ -77,7 +77,7 @@ color: white;
 const DesignDiv = styled.div`
 color: #ACDFFB;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 40px;
   margin-left:8px;
   @media (min-width: 43em){
   font-size: 64px;

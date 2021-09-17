@@ -16,10 +16,10 @@ const InnerDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 300px;
-    height: 700px;
-    padding-bottom: 70px;
+    height: 500px;
+    padding-bottom: 0px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;
@@ -45,7 +45,7 @@ const ArtandLabelDiv = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 300px;
-    height: 700px;
+    height: 500px;
     padding-bottom: 70px;
     @media(min-width: 43em){
         display: flex;
@@ -85,7 +85,7 @@ const Buddha = styled(animated.img)`
     }
 `
 const Turtle = styled(animated.img)`
-    height: 450px;
+    height: 200px;
     aspect-ratio: unset;
     @media(min-width: 43em){
         height: 180px;
@@ -103,10 +103,10 @@ const SpottText = styled.div`
     flex-direction: column;
     color: white;
     align-items: center;
-    justify-content: space-between;
-    height: 200px;
+    justify-content: center;
+    height: 80px;
     width: 330px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     cursor: default;
     @media(min-width: 43em){
         display: flex;
@@ -140,10 +140,10 @@ const GardenText = styled.div`
     flex-direction: column;
     color: white;
     align-items: center;
-    justify-content: space-between;
-    height: 200px;
+    justify-content: center;
+    height: 80px;
     width: 330px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     cursor: default;
     @media(min-width: 43em){
         display: flex;

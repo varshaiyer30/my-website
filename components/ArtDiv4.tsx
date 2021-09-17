@@ -46,7 +46,7 @@ const ArtandLabelDiv = styled.div`
     justify-content: space-between;
     width: 300px;
     height: 500px;
-    padding-bottom: 70px;
+    padding-bottom: 0px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;

@@ -18,8 +18,9 @@ const InnerDiv = styled.div`
     align-items: center;
     justify-content: center;
     width: 300px;
-    height: 400px;
+    height: 350px;
     padding-bottom: 0px;
+    margin-top: 40px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;
@@ -29,6 +30,7 @@ const InnerDiv = styled.div`
         width: 580px;
         margin-bottom: 190px;
         padding-bottom: 0px;
+        margin-top: 0px;
     }
     @media (min-width: 62em){
         flex-direction: row;
@@ -36,6 +38,7 @@ const InnerDiv = styled.div`
         width: 1250px;
         height: 700px;
         margin-bottom: 0px;
+        margin-top: 0px;
     }
 `
 const ArtandLabelDiv = styled.div`
@@ -44,7 +47,7 @@ const ArtandLabelDiv = styled.div`
     align-items: center;
     justify-content: center;
     width: 300px;
-    height: 400px;
+    height: 350px;
     padding-bottom: 0px;
     @media(min-width: 43em){
         display: flex;

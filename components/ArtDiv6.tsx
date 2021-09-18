@@ -16,10 +16,10 @@ const InnerDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 300px;
     height: 700px;
-    padding-bottom: 70px;
+    padding-bottom: 0px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;
@@ -42,10 +42,10 @@ const ArtandLabelDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 300px;
-    height: 700px;
-    padding-bottom: 70px;
+    height: 500px;
+    padding-bottom: 0px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;
@@ -66,6 +66,7 @@ const ArtandLabelDiv = styled.div`
 
 `
 const Buddha = styled(animated.img)`
+height: 250px;
     @media(min-width: 43em){
         height: 240px;
     }
@@ -77,6 +78,7 @@ const Buddha = styled(animated.img)`
     }
 `
 const Turtle = styled(animated.img)`
+height: 230px;
     @media(min-width: 43em){
         height: 230px;
     }
@@ -92,10 +94,10 @@ const SpottText = styled.div`
     flex-direction: column;
     color: white;
     align-items: center;
-    justify-content: space-between;
-    height: 200px;
+    justify-content: center;
+    height: 100px;
     width: 330px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     cursor: default;
     @media(min-width: 43em){
         display: flex;
@@ -127,10 +129,10 @@ const FireText = styled.div`
     flex-direction: column;
     color: white;
     align-items: center;
-    justify-content: space-between;
-    height: 200px;
+    justify-content: center;
+    height: 100px;
     width: 330px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     cursor: default;
     @media(min-width: 43em){
         display: flex;

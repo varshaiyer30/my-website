@@ -16,10 +16,11 @@ const InnerDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 300px;
-    height: 700px;
-    padding-bottom: 70px;
+    height: 600px;
+    margin-top: 90px;
+    padding-bottom: 0px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;
@@ -43,10 +44,10 @@ const ArtandLabelDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 300px;
-    height: 700px;
-    padding-bottom: 70px;
+    height: 500px;
+    padding-bottom: 0px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: column;
@@ -67,7 +68,7 @@ const ArtandLabelDiv = styled.div`
 
 `
 const Buddha = styled(animated.img)`
-    height: 200px;
+    height: 220px;
     aspect-ratio: unset;
     @media(min-width: 43em){
         height: 200px;
@@ -80,7 +81,7 @@ const Buddha = styled(animated.img)`
     }
 `
 const Turtle = styled(animated.img)`
-    height: 450px;
+    height: 220px;
     aspect-ratio: unset;
     @media(min-width: 43em){
         height: 200px;
@@ -98,9 +99,9 @@ const SpottText = styled.div`
     flex-direction: column;
     color: white;
     align-items: center;
-    justify-content: space-between;
-    height: 200px;
-    width: 330px;
+    justify-content: center;
+    height: 110px;
+    width: 200px;
     padding-bottom: 30px;
     cursor: default;
     @media(min-width: 43em){
@@ -133,7 +134,7 @@ const RightTitle = styled.div`
     font-size: 24px;
     font-weight: bold;
     text-align: left;
-    width: 300px;
+    width: 270px;
     @media(min-width: 43em){
         font-size: 36px;
         text-align: right;
@@ -149,7 +150,7 @@ const RightDetail = styled.div`
     font-size: 16px;
     color: white;
     text-align: left;
-    width: 300px;
+    width: 270px;
     @media(min-width: 43em){
         font-size: 24px;
         text-align: right;
@@ -167,7 +168,7 @@ const RightDates = styled.div`
     font-size: 16px;
     color: white;
     text-align: left;
-    width: 300px;
+    width: 270px;
     font-weight: 300;
     @media(min-width: 43em){
         font-size: 20px;

@@ -19,7 +19,7 @@ const InnerDiv = styled.div`
     justify-content: center;
     width: 300px;
     height: 300px;
-    margin-top: 70px;
+    margin-top: 50px;
     padding-bottom: 0px;
     @media(min-width: 43em){
         display: flex;
@@ -106,7 +106,7 @@ const SpottText = styled.div`
     align-items: center;
     justify-content: center;
     height: 80px;
-    width: 330px;
+    width: 200px;
     padding-bottom: 0px;
     cursor: default;
     @media(min-width: 43em){
@@ -178,6 +178,24 @@ const RightTitle = styled.div`
     font-size: 24px;
     font-weight: bold;
     text-align: left;
+    width: 245px;
+    @media(min-width: 43em){
+        font-size: 36px;
+        text-align: right;
+        width: 400px; 
+        
+    }
+    @media (min-width: 62em){
+        font-size: 48px;
+        text-align: right;
+        width: 600px; 
+    } 
+`
+const GardenTitle = styled.div`
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
     width: 300px;
     @media(min-width: 43em){
         font-size: 36px;
@@ -214,6 +232,26 @@ const RightDates = styled.div`
     font-size: 16px;
     color: white;
     text-align: left;
+    width: 245px;
+    font-weight: 300;
+    @media(min-width: 43em){
+        font-size: 20px;
+        text-align: right;
+        width: 400px;
+        margin-top: 5px;
+        
+    }
+    @media (min-width: 62em){
+        font-size: 24px;
+        text-align: right;
+        width: 600px;
+        margin-top: 5px;
+    }
+`
+const GardenDates = styled.div`
+    font-size: 16px;
+    color: white;
+    text-align: left;
     width: 300px;
     font-weight: 300;
     @media(min-width: 43em){
@@ -230,6 +268,7 @@ const RightDates = styled.div`
         margin-top: 5px;
     }
 `
+
 const RightDescription = styled.div`
     font-size: 14px;
     color: #8b8a8a;
@@ -293,8 +332,8 @@ export default function SpottDiv(){
                     src='/garden.jpg' 
                     style={sHoverState2}/>
                 <GardenText>
-                <RightTitle>Garden, 2020</RightTitle>
-                    <RightDates>Photography</RightDates>
+                <GardenTitle>Garden, 2020</GardenTitle>
+                    <GardenDates>Photography</GardenDates>
                 </GardenText>
 
                 </ArtandLabelDiv>

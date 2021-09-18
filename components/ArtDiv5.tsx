@@ -18,7 +18,7 @@ const InnerDiv = styled.div`
     align-items: center;
     justify-content: center;
     width: 300px;
-    height: 400px;
+    height: 350px;
     margin-top: 90px;
     padding-bottom: 0px;
     @media(min-width: 43em){
@@ -46,7 +46,7 @@ const ArtandLabelDiv = styled.div`
     align-items: center;
     justify-content: center;
     width: 300px;
-    height: 400px;
+    height: 350px;
     padding-bottom: 0px;
     @media(min-width: 43em){
         display: flex;
@@ -134,7 +134,7 @@ const RightTitle = styled.div`
     font-size: 24px;
     font-weight: bold;
     text-align: left;
-    width: 270px;
+    width: 290px;
     @media(min-width: 43em){
         font-size: 36px;
         text-align: right;
@@ -150,7 +150,7 @@ const RightDetail = styled.div`
     font-size: 16px;
     color: white;
     text-align: left;
-    width: 270px;
+    width: 290px;
     @media(min-width: 43em){
         font-size: 24px;
         text-align: right;
@@ -168,7 +168,7 @@ const RightDates = styled.div`
     font-size: 16px;
     color: white;
     text-align: left;
-    width: 270px;
+    width: 290px;
     font-weight: 300;
     @media(min-width: 43em){
         font-size: 20px;

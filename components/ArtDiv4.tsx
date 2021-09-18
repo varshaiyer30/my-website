@@ -19,7 +19,7 @@ const InnerDiv = styled.div`
     justify-content: center;
     width: 300px;
     height: 300px;
-    margin-top: 30px;
+    margin-top: 15px;
     padding-bottom: 0px;
     @media(min-width: 43em){
         display: flex;

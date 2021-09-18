@@ -18,7 +18,7 @@ const InnerDiv = styled.div`
     align-items: center;
     justify-content: center;
     width: 300px;
-    height: 500px;
+    height: 400px;
     padding-bottom: 0px;
     @media(min-width: 43em){
         display: flex;
@@ -44,7 +44,7 @@ const ArtandLabelDiv = styled.div`
     align-items: center;
     justify-content: center;
     width: 300px;
-    height: 500px;
+    height: 400px;
     padding-bottom: 0px;
     @media(min-width: 43em){
         display: flex;
@@ -66,7 +66,7 @@ const ArtandLabelDiv = styled.div`
 
 `
 const Buddha = styled(animated.img)`
-height: 250px;
+height: 230px;
     @media(min-width: 43em){
         height: 240px;
     }

@@ -54,10 +54,6 @@ export default function Home() {
         <SpottDiv />
         <IthTrailsDiv />
         <VscoDiv />
-        <IntroAbtDiv />
-        <AboutDiv1 />
-        <AboutDiv2 />
-        <AboutDiv3 />
         <IntroArtDiv />
         <ArtDiv1 />
         <ArtDiv2 />
@@ -65,6 +61,10 @@ export default function Home() {
         <ArtDiv4 />
         <ArtDiv5 />
         <ArtDiv6 />
+        <IntroAbtDiv />
+        <AboutDiv1 />
+        <AboutDiv2 />
+        <AboutDiv3 />
         <Contacts/>
       </FirstDiv>
     </div>

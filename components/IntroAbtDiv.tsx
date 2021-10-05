@@ -99,7 +99,7 @@ const Link = styled.a`
 `
 export default function IntroDiv() {
   const pdf = () => {
-    window.open('website_resume.pdf', '_blank')
+    window.open('varshaiyerresume.pdf', '_blank')
 }
     return(
         <OuterDiv>

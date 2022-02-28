@@ -74,7 +74,7 @@ const SpottText = styled.div`
         margin-top: 480px;
         align-items: flex-end;
         justify-content: space-between;
-        height: 220px;
+        height: 260px;
         width: 250px;
         margin-left: 50px;
         padding-bottom: 20px;
@@ -85,7 +85,7 @@ const SpottText = styled.div`
         margin-top: 480px;
         align-items: flex-end;
         justify-content: space-between;
-        height: 140px;
+        height: 220px;
         width: 400px;
         /* margin-left: 15px; */
         padding-bottom: 160px;
@@ -114,15 +114,15 @@ const RightDetail = styled.div`
     text-align: left;
     width: 300px;
     @media(min-width: 43em){
-        font-size: 24px;
+        font-size: 20px;
         text-align: right;
-        width: 400px;
+        width: 300px;
         margin-top: 5px;
     }
     @media (min-width: 62em){
-        font-size: 36px;
+        font-size: 24px;
         text-align: right;
-        width: 400px;
+        width: 330px;
         margin-top: 5px;
     }
 `
@@ -164,6 +164,7 @@ const RightDescription = styled.div`
 const RightClicktoLearn = styled.div`
     font-size: 14px;
     color: white;
+    fontStyle: italic;
     text-align: left;
     width: 300px;
     @media(min-width: 43em){
@@ -184,7 +185,7 @@ const Spacer = styled.div`
 export default function SpottDiv(){
     const [sHover, setSHover] = useState(false)
     const sHoverState = useSpring({
-        boxShadow: sHover ? '0px 4px 4px 7px rgba(28, 77, 67, 0.50)' : '0px 0px 0px 0px rgba(54, 93, 85, 0.2)',
+        boxShadow: sHover ? '0px 4px 4px 7px rgba(230, 210, 161, 0.20)' : '0px 0px 0px 0px rgba(230, 210, 161, 0.2)',
         transform: sHover ? 'translateY(-2%)' : 'translateY(0%)',
         config: {
             mass: 1,
@@ -192,27 +193,27 @@ export default function SpottDiv(){
             friction: 26,
         }
     })
-    const notion = () => {
-        window.open('https://varshaiyer.notion.site/varshaiyer/Ithaca-Trails-App-Dev-Hack-Challenge-FA-20-8b4df6cfb2d5428cb900a8af3b4eb565', '_blank')
-    }
+    // const notion = () => {
+    //     window.open('https://varshaiyer.notion.site/spott-19007c5d5131439ebcd7dddf15d5e5e3', '_blank')
+    // }
 
     return(
         <OuterDiv>
-            <InnerDiv onClick={notion}>
+            <InnerDiv>
                 <SMockup
                     onMouseEnter={() => setSHover(true)} 
                     onMouseLeave={() => setSHover(false)} 
-                    src='/ithacatrails.png' 
+                    src='/grow.png' 
                     style={sHoverState}></SMockup>
                 
                 <SpottText onMouseEnter={() => setSHover(true)} 
                     onMouseLeave={() => setSHover(false)} >
-                    <RightTitle>Ithaca Trails</RightTitle>
-                    <RightDetail>AppDev Hack Challenge</RightDetail>
-                    <RightDates>{"Dec \'20 - Feb \'21"}</RightDates>
-                    <RightDescription>As a part of hack challenge organized by Cornell University's AppDev project team, I designed a new app for finding trails in Ithaca, New York.
+                    <RightTitle>Grow&Give</RightTitle>
+                    <RightDetail>Stanford Center on Longevity Design Challenge</RightDetail>
+                    <RightDates>{"Sept \'21 - Dec \'21"}</RightDates>
+                    <RightDescription>Grow&Give is an app I designed with a team on Design Consulting at Cornell. The app encourages a greener lifestyle by making gardening easier and more accesible. After ideation, user research, and protopying, we submitted the product to Stanford's challenge.
                     </RightDescription>
-                    <RightClicktoLearn>click to learn more
+                    <RightClicktoLearn>coming soon
                     </RightClicktoLearn>
                 </SpottText>
                 <Player

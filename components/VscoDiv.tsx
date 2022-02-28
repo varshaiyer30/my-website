@@ -2,51 +2,32 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { useState } from 'react'
 import { animated, config, useSpring } from 'react-spring'
-import Contacts from './Contacts'
 import { Player } from '@lottiefiles/react-lottie-player'
 
 const OuterDiv = styled.div`
     display:flex;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
+    justify-content: center;
     height: 100%;
     scroll-snap-align: center;
-    @media (min-width: 43em){
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        width: 100vw;
-        height: 100%;
-        scroll-snap-align: center;
-    }
-    @media (min-width: 62em){
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        width: 100vw;
-        height: 100%;
-        scroll-snap-align: center;
-    }
 `
 const InnerDiv = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
     width: 300px;
     height: 700px;
-    padding-bottom: 70px;
-    margin-top: 30px;
     cursor: pointer;
+    padding-bottom: 70px;
     @media(min-width: 43em){
         display: flex;
         flex-direction: row;
         align-items: flex-end;
-        justify-content: space-between;
-        height: 500px;
+        height: 520px;
         width: 580px;
         padding-bottom: 0px;
+        padding-left: 10px;
     }
     @media (min-width: 62em){
         display: flex;
@@ -58,7 +39,7 @@ const InnerDiv = styled.div`
         padding-bottom: 0px;
     }
 `
-const VMockup = styled(animated.img)`
+const ITMockup = styled(animated.img)`
     height: 470px;
     border-width: 1px;
     border-color: #666666;
@@ -76,109 +57,102 @@ const VMockup = styled(animated.img)`
         margin-bottom: 35px;
     }
 `
-const VSCOText = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 185px;
-    width: 330px;
-    padding-bottom: 25px;
-    @media(min-width: 43em){
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-top: 480px;
-        justify-content: center;
-        height: 220px;
-        width: 280px;
-        padding-bottom: 10px;
-        margin-left: 40px;
-    }
-    @media (min-width: 62em){
-        display: flex;
-        flex-direction: column;
-        margin-top: 480px;
-        align-items: flex-end;
-        justify-content: space-between;
-        height: 200px;
-        width: 400px;
-        padding-bottom: 140px;
-        margin-left: 100px;
-    }
-    
-`
-
-const RightTitle = styled.div`
+const LeftTitle = styled.div`
     color: white;
     font-size: 24px;
     font-weight: bold;
     text-align: left;
     width: 300px;
     @media(min-width: 43em){
-        font-size: 32px;
-        text-align: right;
+        font-size: 36px;
         width: 400px;
     }
     @media (min-width: 62em){
         font-size: 48px;
-        text-align: right;
-        width: 400px;   
-    }
+        width: 400px;
+    }   
 `
-const RightDetail = styled.div`
+const LeftDetail = styled.div`
     font-size: 16px;
     color: white;
     text-align: left;
     width: 300px;
     @media(min-width: 43em){
         font-size: 24px;
-        text-align: right;
-        margin-top: 5px;
         width: 400px;
     }
     @media (min-width: 62em){
         font-size: 36px;
         width: 400px;
-        text-align: right;
+        /* font-weight: lighter; */
         margin-top: 5px;
     }
 `
 
-const RightDates = styled.div`
+const LeftDates = styled.div`
     font-size: 16px;
     color: #8b8a8a;
     text-align: left;
     width: 300px;
     @media(min-width: 43em){
         font-size: 20px;
-        text-align: right;
         width: 400px;
         margin-top: 5px;
     }
     @media (min-width: 62em){
         font-size: 24px;
-        text-align: right;
         width: 400px;
+        /* font-weight: lighter; */
         margin-top: 5px;
     }
 `
-const RightDescription = styled.div`
+const LeftDescription = styled.div`
     font-size: 14px;
     color: #ADACAC;
     text-align: left;
     width: 300px;
     @media(min-width: 43em){
-        width: 270px;
-        text-align: right;
         margin-top: 5px;
+        width: 260px;
     }
     @media (min-width: 62em){
         font-size: 18px;
-        text-align: right;
-        width: 330px;
+        width: 320px;
+        /* font-weight: lighter; */
         margin-top: 5px;
     }
+`
+
+const IthacaTrailsText = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 170px;
+    width: 330px;
+    padding-bottom: 30px;
+    @media(min-width: 43em){
+        display: flex;
+        flex-direction: column;
+        margin-top: 480px;
+        margin-right: 20px;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 100px;
+        width: 280px;
+        padding-bottom: 80px;
+    }
+    @media (min-width: 62em){
+        display: flex;
+        flex-direction: column;
+        margin-top: 480px;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 200px;
+        width: 400px;
+        margin-right: 60px;
+        padding-bottom: 140px;
+    }   
 `
 const RightClicktoLearn = styled.div`
     font-size: 14px;
@@ -187,12 +161,12 @@ const RightClicktoLearn = styled.div`
     width: 300px;
     @media(min-width: 43em){
         width: 250px;
-        text-align: right;
+        text-align: left;
         margin-top: 5px;
     }
     @media (min-width: 62em){
         font-size: 18px;
-        text-align: right;
+        text-align: left;
         width: 330px;
         margin-top: 5px;
     }
@@ -200,50 +174,49 @@ const RightClicktoLearn = styled.div`
 const ExternalLink = styled.a`
     text-decoration: none;
 `
-const Spacer = styled.div`
-    height: 40px;
-`
-export default function VscoDiv(){
-    const [vHover, setVHover] = useState(false)
-    const vHoverState = useSpring({
-        boxShadow: vHover ? '0px 4px 4px 7px rgba(255, 255, 255, 0.20)' : '0px 0px 0px 0px rgba(255, 255, 255, 0.20)',
-        transform: vHover ? 'translateY(-2%)' : 'translateY(0%)',
+export default function IthTrailsDiv(){
+    const [iHover, setIHover] = useState(false)
+    const iHoverState = useSpring({
+        boxShadow: iHover ? '0px 4px 4px 7px rgba(255, 255, 255, 0.20)' : '0px 0px 0px 0px rgba(255, 255, 255, 0.20)',
+        transform: iHover ? 'translateY(-2%)' : 'translateY(0%)',
         config: {
             mass: 1,
             tension: 170,
             friction: 26,
         }
+
     })
-    const article = () => {
+
+    const notion = () => {
         window.open('https://bootcamp.uxdesign.cc/vsco-filtering-main-feed-content-ef23a7c2c449', '_blank')
     }
 
     return(
         <OuterDiv>
-                <InnerDiv onClick={article}>
-                    <VMockup
-                        onMouseEnter={() => setVHover(true)}
-                        onMouseLeave={() => setVHover(false)}
-                        src='/vsco.png'
-                        style={vHoverState}>
-                    </VMockup>
-                    <VSCOText onMouseEnter={() => setVHover(true)}
-                        onMouseLeave={() => setVHover(false)}>
-                        <RightTitle>VSCO Case Study</RightTitle>
-                        <RightDetail>Medium Bootcamp</RightDetail>
-                        <RightDates>{"Sept \'20 - Feb \'21"}</RightDates>
-                        <RightDescription>{"This is my first case study I completed as a part of a digital product design class I took during my first semester as a student at Cornell University. It was published by UX Collective\’s Medium publication - Bootcamp."}</RightDescription>
-                        <RightClicktoLearn>click to learn more
+            <InnerDiv onClick={notion}>
+                <IthacaTrailsText onMouseEnter={() => setIHover(true)}
+                    onMouseLeave={() => setIHover(false)}>
+                    <LeftTitle>VSCO Case Study</LeftTitle>
+                    <LeftDetail>Medium Bootcamp</LeftDetail>
+                    <LeftDates>{"Sept \'20 - Feb \'21"}</LeftDates>
+                    <LeftDescription>{"This is my first case study I completed as a part of a digital product design class I took during my first semester as a student at Cornell University. It was published by UX Collective\’s Medium publication - Bootcamp."}</LeftDescription>
+                    <RightClicktoLearn>click to learn more
                     </RightClicktoLearn>
-                    </VSCOText>
-                    <Player
+                </IthacaTrailsText>
+                <ITMockup 
+                    onMouseEnter={() => setIHover(true)}
+                    onMouseLeave={() => setIHover(false)}
+                    src='/vsco.png'
+                    style={iHoverState}>
+                </ITMockup>
+                <Player
                     autoplay
                     loop
                     src="https://assets1.lottiefiles.com/packages/lf20_yjh6sxqn.json"
                     style={{ height: '130px', width: '130px'}}
                 >
             </Player>
-                </InnerDiv>
+            </InnerDiv>
         </OuterDiv>
     )
 }

@@ -5,6 +5,7 @@ import styled, { createGlobalStyle, keyframes } from 'styled-components'
 import Header from '../components/Header'
 import { animated, config, useSpring } from 'react-spring'
 import { Player } from '@lottiefiles/react-lottie-player'
+import GrowDiv from '../components/GrowDiv'
 import SpottDiv from '../components/SpottDiv'
 import IthTrailsDiv from '../components/IthTrailsDiv'
 import VscoDiv from '../components/VscoDiv'
@@ -51,6 +52,7 @@ export default function Home() {
         </Head>
         <GlobalStyle />
         <IntroDiv />
+        <GrowDiv />
         <SpottDiv />
         <IthTrailsDiv />
         <VscoDiv />
